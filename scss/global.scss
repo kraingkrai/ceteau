@@ -1,7 +1,63 @@
 @import "_variables.scss";
 
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../lib/fonts/gotham/Gotham-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../lib/fonts/gotham/Gotham-Book.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../lib/fonts/gotham/Gotham-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Ultra';
+    src: url('../lib/fonts/gotham/Gotham-Ultra.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../lib/fonts/gotham/Gotham-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../lib/fonts/gotham/Gotham-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('../lib/fonts/gotham/Gotham-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url('../lib/fonts/gotham/Gotham-Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: 'Open Sans', 'Kanit';
+    font-family: 'Gotham Light', 'Open Sans', 'Kanit';
     font-weight: normal;
 }
 
@@ -21,6 +77,10 @@ header {
     .logo {
         float: left;
 
+        img {
+            width: 250px;
+        }
+
         @media only screen and (max-width: $screenTiny) {
             img {
                 width: 120px;
@@ -28,9 +88,21 @@ header {
         }
     }
 
+    .header-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .top-menu {
         float: right;
         text-align: right;
+        padding-top: 25px;
+
+        i {
+            cursor: pointer;
+            color: #fff;
+            font-size: 30px;
+        }
 
         nav {
             display: block;
@@ -68,7 +140,7 @@ header {
 
 footer {
     padding: 40px 0;
-    background: #333;
+    background: #e2e4ed;
 
     nav {
         a, label {
@@ -80,8 +152,9 @@ footer {
             }
 
             &.main {
+                font-family: 'Gotham Bold';
                 font-size: 18px;
-                color: #fff;
+                color: #6b636f;
 
                 @media only screen and (max-width: $screenSmall) {
                     padding-top: 20px;
@@ -95,7 +168,6 @@ footer {
                     width: 50px;
                     margin: 5px 0 15px;
                     content: "";
-                    background: #5ecaff;
                     height: 2px;
                     display: block;
 
@@ -106,8 +178,10 @@ footer {
             }
 
             &.sub {
+                font-family: 'Gotham Book';
                 font-size: 14px;
-                color: #999;
+                color: #827b86;
+                padding-bottom: 5px;
             }
         }
 
@@ -117,21 +191,23 @@ footer {
     }
     
     .social {
-        padding-top: 50px;
-        text-align: center;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 20px;
+
+        @media only screen and (max-width: $screenSmall) {
+            text-align: center;
+            padding-bottom: 10px;
+        }
 
         a {
             display: inline-block;
-            margin: 0 5px;
-            background: #777;
             width: 50px;
-            height: 50px;
-            border-radius: 1000px;
+            height: 36px;
 
             i {
-                color: #333;
-                font-size: 40px;
-                padding-top: 4px;
+                color: #635966;
+                font-size: 26px;
                 display: block;
             }
         }
@@ -142,4 +218,24 @@ footer {
         text-align: center;
         padding-top: 20px;
     }
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #fca300;
+    font-size: 24px;
+    padding: 15px 60px;
+    display: inline-block;
+    margin-top: 20px;
+
+    &:hover {
+        color: #fff;
+        background-color: #fca300;
+        opacity: 1;
+    }
+}
+
+.detail {
+    font-family: 'Gotham Book';
+    color: #4f4c53;
 }
