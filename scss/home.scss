@@ -165,8 +165,12 @@ page.home {
     .product {
         padding: 60px 0;
 
+        .row {
+            margin: 0;
+        }
+
         .desc {
-            padding: 100px 15px 0 60px;
+            padding: 100px 15px 0 45px;
 
             h1 {
                 color: $headerColor;
