@@ -11,14 +11,15 @@
 
     //Function Start
     function initHomeSlider() {
-        $('#homeTestimonialContent').lightSlider({
+        $('#servicesSlider').lightSlider({
             item: 1,
             slideMargin: 0,
             speed: 1000,
             auto: true,
             loop: true,
             pause: 5000,
-            mode: 'fade'
+            mode: 'fade',
+            controls: false
         });
 
         $('#newsSlider').lightSlider({

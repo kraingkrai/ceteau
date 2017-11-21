@@ -13,6 +13,13 @@ page.home {
             object-fit: fill;
         }
 
+        .item {
+            height: 600px;
+            @media only screen and (max-width: $screenTiny) {
+                height: 400px;
+            }
+        }
+
         .slogan {
             position: absolute;
             left: 50px;
@@ -22,7 +29,7 @@ page.home {
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             z-index: 999;
-            width: 500px;
+            width: 550px;
 
             @media only screen and (max-width: $screenSmall) {
                 width: 100%;
@@ -110,55 +117,70 @@ page.home {
     }
 
     .service-list {
-        position: relative;
+        padding: 15px 50px;
 
-        .desc {
-            position: absolute;
-            left: 50px;
-            right: 50px;
-            top: 50%;
-            transform: translate(0, -50%);
-            text-align: center;
-            -ms-transform: translate(0, -50%);
-            -webkit-transform: translate(0, -50%);
-            z-index: 999;
+        .row {
+            div {
+                text-align: center;
 
-            h1 {
-                font-family: 'Gotham Black';
-                color: #fff;
-                font-size: 35px;
-                @media only screen and (max-width: $screenSmall) {
-                    font-size: 20px;
+                .item {
+                    width: 150px;
+                    height: 150px;
+                    background-size: 150px 150px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .image1 {
+                    background-image: url('../img/icons/graph.png');
+                }
+
+                .image2 {
+                    background-image: url('../img/icons/bulb.png');
+                }
+
+                .image3 {
+                    background-image: url('../img/icons/drill.png');
+                }
+
+                .image4 {
+                    background-image: url('../img/icons/staff.png');
+                }
+
+                h3 {
+                    font-family: 'Gotham Black';
+                    font-size: 30px;
+                    color: #3d58b3;
+                    width: 350px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 10px;
+                }
+
+                a:hover .image1 {
+                    background-image: url('../img/icons/graph-hover.png');
+                }
+
+                a:hover .image2 {
+                    background-image: url('../img/icons/bulb-hover.png');
+                }
+
+                a:hover .image3 {
+                    background-image: url('../img/icons/drill-hover.png');
+                }
+
+                a:hover .image4 {
+                    background-image: url('../img/icons/staff-hover.png');
+                }
+
+                a:hover h3 {
+                    color: #fca301 !important;
                 }
             }
         }
 
-        .item {
-            height: 500px;
-
-            @media only screen and (max-width: $screenTiny) {
-                height: 400px;
-            }
-        }
-
-        .lSSlideOuter .lSPager.lSpg {
-            position: absolute;
-            text-align: center;
-            left: 0;
-            right: 0;
-            bottom: 30px;
-
-            li {
-                a {
-                    background-color: #fff;
-                }
-
-                &.active {
-                    a {
-                        background-color: #fca400;;
-                    }
-                }
-            }
+        .space {
+            padding: 50px 0;
         }
     }
 

@@ -72,7 +72,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    @extend .gradientBackground;
+    @extend .gradientBlueBackground;
 
     .logo {
         float: left;
@@ -242,4 +242,50 @@ footer {
 
 .no-padding {
     padding: 0;
+}
+
+.lSAction {
+
+    a {
+        opacity: 1;
+        background-image: url('../img/icons/arrow-right.png');
+        width: 26px;
+        height: 42px;
+    }
+
+    .lSNext, .lSPrev {
+        background-position: initial;
+    }
+
+    .lSPrev {
+        left: 30px;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .lSNext {
+        right: 30px
+    }
+}
+
+.lSSlideOuter .lSPager.lSpg {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    li {
+        a {
+            background-color: #fff;
+        }
+        &.active {
+            a {
+                background-color: #032f72;
+                ;
+            }
+        }
+    }
 }
