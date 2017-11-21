@@ -261,3 +261,11 @@ page.home {
     }
 
 }
+
+// Preload Images
+body {
+    background: url('../img/icons/bulb-hover.png') no-repeat -9999px -9999px,
+                url('../img/icons/drill-hover.png') no-repeat -9999px -9999px,
+                url('../img/icons/graph-hover.png') no-repeat -9999px -9999px,
+                url('../img/icons/staff-hover.png') no-repeat -9999px -9999px
+}
