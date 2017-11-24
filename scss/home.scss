@@ -39,7 +39,7 @@ page.home {
                 font-family: 'Gotham Black', 'Open Sans';
                 color: $headerColor;
                 text-transform: uppercase;
-                font-size: 60px;
+                font-size: 58px;
 
                 @media only screen and (max-width: $screenSmall) {
                     font-size: 40px;
@@ -52,17 +52,10 @@ page.home {
         padding: 40px 0 80px 0;
         overflow: hidden;
         text-align: center;
-        
-        h1 {
-            color: $headerColor;
-            text-transform: uppercase;
-            font-size: 40px;
-            font-family: 'Gotham Black', 'Open Sans';
-        }
 
         .detail {
             padding-top: 25px;
-            font-size: 30px;
+            font-size: 28px;
             width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -149,7 +142,7 @@ page.home {
 
                 h3 {
                     font-family: 'Gotham Black';
-                    font-size: 30px;
+                    font-size: 28px;
                     color: #3d58b3;
                     width: 350px;
                     margin-left: auto;
@@ -193,18 +186,11 @@ page.home {
 
         .desc {
             padding: 100px 15px 0 45px;
-
-            h1 {
-                color: $headerColor;
-                text-transform: uppercase;
-                font-size: 40px;
-                font-family: 'Gotham Black', 'Open Sans';
-            }
     
             .detail {
                 padding-top: 25px;
                 padding-bottom: 40px;
-                font-size: 25px;
+                font-size: 24px;
             }
         }
 
@@ -229,7 +215,7 @@ page.home {
             h1 {
                 font-family: 'Gotham Light';
                 color: #fff;
-                font-size: 45px;
+                font-size: 42px;
 
                 @media only screen and (max-width: $screenSmall) {
                     font-size: 30px;
@@ -237,7 +223,7 @@ page.home {
 
                 .location {
                     font-family: 'Gotham Book';
-                    font-size: 24px;
+                    font-size: 22px;
 
                     @media only screen and (max-width: $screenSmall) {
                         font-size: 20px;

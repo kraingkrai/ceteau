@@ -223,14 +223,14 @@ footer {
 .main-btn {
     color: #fff;
     background-color: #fca300;
-    font-size: 24px;
+    font-size: 22px;
     padding: 15px 60px;
     display: inline-block;
     margin-top: 20px;
 
     &:hover {
         color: #fff;
-        background-color: #fca300;
+        background-color: $headerColor;
         opacity: 1;
     }
 }
@@ -288,4 +288,11 @@ footer {
             }
         }
     }
+}
+
+h1.main-header {
+    color: $headerColor;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Gotham Black', 'Open Sans';
 }
