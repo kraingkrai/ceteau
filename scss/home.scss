@@ -59,6 +59,7 @@ page.home {
             width: 800px;
             margin-left: auto;
             margin-right: auto;
+            color: $descColor;
         }
 
         .main {
@@ -111,15 +112,24 @@ page.home {
 
     .service-list {
         padding: 15px 50px;
+        text-align: center;
+        background-color: #f7f6f5;
+        color: $textColor;
+
+        h1 {
+            padding: 40px 0 75px 0;
+        }
 
         .row {
+            padding-bottom: 50px;
+
             div {
                 text-align: center;
 
                 .item {
-                    width: 150px;
-                    height: 150px;
-                    background-size: 150px 150px;
+                    width: 100px;
+                    height: 100px;
+                    background-size: 100px 100px;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -142,13 +152,25 @@ page.home {
 
                 h3 {
                     font-family: 'Gotham Black';
-                    font-size: 28px;
-                    color: #3d58b3;
-                    width: 350px;
+                    font-size: 26px;
+                    color: $headerColor;
                     margin-left: auto;
                     margin-right: auto;
                     padding-top: 10px;
+                    position: relative;
+                    height: 115px;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        border-bottom: 2px solid;
+                        border-bottom-color: $headerColor;
+                        width: 50%;
+                        left: 25%;
+                        bottom: 0;
+                    }
                 }
+
 
                 a:hover .image1 {
                     background-image: url('../img/icons/graph-hover.png');
@@ -167,7 +189,17 @@ page.home {
                 }
 
                 a:hover h3 {
-                    color: #fca301 !important;
+                    color: $hoverColor !important;
+
+                    &:before {
+                        border-bottom-color: $hoverColor;
+                    }
+                }
+
+                p {
+                    font-family: 'Gotham Book', 'Open Sans';
+                    font-size: 20px;
+                    padding: 20px 10px 10px 0;
                 }
             }
         }
@@ -191,6 +223,7 @@ page.home {
                 padding-top: 25px;
                 padding-bottom: 40px;
                 font-size: 24px;
+                color: $descColor;
             }
         }
 
@@ -213,9 +246,13 @@ page.home {
             z-index: 999;
 
             h1 {
-                font-family: 'Gotham Light';
+                font-family: 'Gotham Book';
                 color: #fff;
                 font-size: 42px;
+
+                &.main-header {
+                    font-family: 'Gotham Black' !important;
+                }
 
                 @media only screen and (max-width: $screenSmall) {
                     font-size: 30px;
@@ -243,6 +280,95 @@ page.home {
                 -webkit-filter: brightness(0.8);
                 filter: brightness(0.8);
             }
+        }
+    }
+
+    .news {
+        padding-bottom: 65px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            padding: 55px 0 40px 0;
+            text-align: center;
+        }
+
+        .news-item {
+            background-color: #f2f6fa;
+            font-family: 'Gotham Book';
+            color: $textColor;
+
+            .date, .desc {
+                padding: 20px 30px;
+            }
+
+            .date {
+                font-size: 16px;
+            }
+
+            span {
+                padding-right: 20px;
+                
+                i {
+                    padding-right: 9px;
+                }
+
+            }
+
+            .img-container {
+                height: 300px;
+            }
+
+            .desc {
+                padding-bottom: 35px;
+
+                h1.sub-header {
+                    text-align: left;
+                    padding: 0;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                }
+
+                a {
+                    color: $textColor;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: $hoverColor;
+                    }
+                }
+            }
+        }
+
+        .lSAction {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+
+            .lSPrev {
+                left: -70px;
+                position: absolute;
+            }
+
+            .lSNext {
+                right: -70px;
+                position: absolute;
+            }
+        }
+
+        #newsSlider {
+            position: relative;
+        }
+
+        .news-slider-container {
+            position: relative;
         }
     }
 

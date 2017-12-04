@@ -22,7 +22,7 @@
             controls: false
         });
 
-        $('#newsSlider').lightSlider({
+        $('#projectSlider').lightSlider({
             item: 1,
             slideMargin: 0,
             speed: 1000,
@@ -31,6 +31,21 @@
             pause: 5000,
             mode: 'fade',
             pager: false
+        });
+
+        var newsSlider = $('#newsSlider').lightSlider({
+            controls: false,
+            speed: 800,
+            slideMargin: 50,
+            pager: false
+        });
+        
+        $('#newsSliderPrev').on('click', function () {
+            newsSlider.goToPrevSlide();      
+        });
+
+        $('#newsSliderNext').on('click', function () {
+            newsSlider.goToNextSlide();
         });
     }
     //Function End

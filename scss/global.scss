@@ -244,6 +244,14 @@ footer {
     padding: 0;
 }
 
+.slider-control-orange {
+    .lSAction {
+        a {
+            background-image: url('../img/icons/arrow-right-orange.png');
+        }
+    }
+}
+
 .lSAction {
 
     a {
@@ -294,5 +302,11 @@ h1.main-header {
     color: $headerColor;
     text-transform: uppercase;
     font-size: 38px;
+    font-family: 'Gotham Black', 'Open Sans';
+}
+
+h1.sub-header {
+    color: $headerColor;
+    font-size: 36px;
     font-family: 'Gotham Black', 'Open Sans';
 }
