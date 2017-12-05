@@ -220,6 +220,26 @@ footer {
     }
 }
 
+.menu-container {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: $headerColor;
+    z-index: 99999;
+
+    .lang-options {
+
+    }
+
+    .menu-items {
+        .menu-text {
+            text-transform: uppercase;
+        }
+    }
+}
+
 .main-btn {
     color: #fff;
     background-color: #fca300;
