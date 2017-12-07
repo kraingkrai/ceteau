@@ -221,23 +221,80 @@ footer {
 }
 
 .menu-container {
-    position: absolute;
+    position: fixed;
     width: 400px;
-    right: 0;
+    right: -400px;
     top: 0;
     height: 100%;
     background-color: $headerColor;
     z-index: 99999;
+    -webkit-transition: all 0.30s linear;
+    -moz-transition: all 0.30s linear;
+    -ms-transition: all 0.30s linear;
+    -o-transition: all 0.30s linear;
+    transition: all 0.30s linear;
 
-    .lang-options {
+    .menu-content {
+        padding: 50px 55px;
+        color: #fff;
 
-    }
+        a {
+            color: #fff;
+        }
+        
+        .lang-options {
+            font-size: 22px;
 
-    .menu-items {
-        .menu-text {
-            text-transform: uppercase;
+            span {
+                font-size: 45px;
+                position: absolute;
+                right: 48px;
+                top: 32px;
+                cursor: pointer;
+            }
+        }
+    
+        .menu-items {
+            list-style: none;
+            padding: 0;
+            margin-top: 90px;
+
+            li {
+                padding: 10px 0;
+
+                .menu-text {
+                    text-transform: uppercase;
+                    font-family: 'Gotham Black';
+                    font-size: 32px;
+                }
+
+                .menu-icon i {
+                    float: right;
+                    font-size: 45px;
+                    font-weight: bold;
+                    color: $hoverColor;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .social-items {
+            font-size: 29px;
+            list-style: none;
+            padding: 0;
+            margin-top: 80px;
+
+            li {
+                float: left;
+                padding-right: 35px;
+
+                &:last-child {
+                    padding: 0;
+                }
+            }
         }
     }
+
 }
 
 .main-btn {
@@ -308,6 +365,8 @@ footer {
     li {
         a {
             background-color: #fff;
+            height: 15px;
+            width: 15px;
         }
         &.active {
             a {
@@ -329,4 +388,9 @@ h1.sub-header {
     color: $headerColor;
     font-size: 36px;
     font-family: 'Gotham Black', 'Open Sans';
+}
+
+.strong {
+    font-family: 'Gotham Book';
+    font-weight: bold;
 }

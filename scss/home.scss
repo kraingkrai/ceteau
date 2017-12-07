@@ -56,7 +56,7 @@ page.home {
         .detail {
             padding-top: 25px;
             font-size: 28px;
-            width: 800px;
+            width: 1000px;
             margin-left: auto;
             margin-right: auto;
             color: $descColor;
@@ -329,6 +329,10 @@ page.home {
                     margin-top: 0;
                     margin-bottom: 15px;
                     font-size: 28px;
+
+                    &:hover {
+                        color: $hoverColor;
+                    }
                 }
 
                 p {

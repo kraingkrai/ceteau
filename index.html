@@ -50,59 +50,79 @@
         <div class="header-container">
             <a href="#" class="logo"><img src="img/ceteau-logo.png" alt="CeTeau" /></a>
             <div class="top-menu">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i id="openMenuBtn" class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </div>
     </header>
 
-    <div class="menu-container" style="display:none;">
-        <div class="lang-options">
-            <a href="">EN</a> |
-            <a href="">NL</a> |
-            <a href="">TH</a>
-            <span id="closeMenuBtn">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
+    <div id="menuContainer" class="menu-container">
+        <div class="menu-content">
+            <div class="lang-options">
+                <a href="">EN</a> |
+                <a href="">NL</a> |
+                <a href="">TH</a>
+                <span id="closeMenuBtn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+            <ul class="menu-items">
+                <li>
+                    <a href="">
+                        <span class="menu-text">Home</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Company</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Product</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Projects</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">News</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Contact</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-items">
+                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
-        <ul class="menu-items">
-            <li>
-                <span class="menu-text">Home</span>
-                <span class="menu-icon">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">Company</span>
-                <span class="menu-icon">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">Product</span>
-                <span class="menu-icon">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">News</span>
-                <span class="menu-icon">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">Contact</span>
-                <span class="menu-icon">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
-            </li>
-        </ul>
-        <ul class="social-items">
-            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
-            <li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
-        </ul>
     </div>
 
     <!-- Body Content -->
@@ -149,9 +169,15 @@
         </section>
 
         <section class="concept">
-            <h1 class="main-header">Welcome To Ceteau</h1>
+            <h1 class="main-header">Worldwide Ground Improvement</h1>
             <p class="detail">
-                We can offer a complete tailored package for almost any geosynthetic challenge
+                CeTeau enables construction on weak soils<br>utilizing the best material and equipment in the world.
+                <br /><br />
+                Our core business is the
+                manufacturing<br>and installation of prefabricated vertical wick drains.
+                <br /><br />
+                Our team has a long experience<br>working in the most
+                remote places on the globe.
             </p>
             <a href="" class="main-btn font-medium">Read More</a>
         </section>
@@ -362,11 +388,24 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <label class="main">Contact</label>
-                    <a href="" class="sub">The Netherlands</a>
+                    <p>
+                        <span class="strong">CeTeau BV</span>
+                        <br /><br />
+                        It Gruthof 6
+                        8754 GZ
+                        Makkum
+                        The Netherlands
+                        <br /><br />
+                        Info@ceteau.com
+                        +31 85 888 3400
+                        <br /><br />
+                        <span class="strong">Regional Offices</span>
+                    </p>
+                    <!-- <a href="" class="sub">The Netherlands</a>
                     <a href="" class="sub">United Kingdom</a>
                     <a href="" class="sub">Mexico</a>
                     <a href="" class="sub">Malaysia</a>
-                    <a href="" class="sub">Thailand</a>
+                    <a href="" class="sub">Thailand</a> -->
                 </div>
             </nav>
         </div>
