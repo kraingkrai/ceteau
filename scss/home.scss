@@ -56,7 +56,7 @@ page.home {
         .detail {
             padding-top: 25px;
             font-size: 28px;
-            width: 1000px;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             color: $descColor;
@@ -283,96 +283,105 @@ page.home {
         }
     }
 
-    .news {
-        padding-bottom: 65px;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
+    section.news {
+        color: #fff;
+        background-color: #009cde;
+        background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+        margin-top: 60px;
 
-        h1 {
-            padding: 55px 0 40px 0;
-            text-align: center;
-        }
+        .news-container {
+            padding-bottom: 65px;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
 
-        .news-item {
-            background-color: #f2f6fa;
-            font-family: 'Gotham Book';
-            color: $textColor;
-
-            .date, .desc {
-                padding: 20px 30px;
+            h1 {
+                padding: 55px 0 40px 0;
+                text-align: center;
+                color: #fff;
             }
 
-            .date {
-                font-size: 16px;
-            }
+            .news-item {
+                background-color: #f2f6fa;
+                font-family: 'Gotham Book';
+                color: $textColor;
 
-            span {
-                padding-right: 20px;
-                
-                i {
-                    padding-right: 9px;
+                .date, .desc {
+                    padding: 20px 30px;
                 }
 
-            }
-
-            .img-container {
-                height: 300px;
-            }
-
-            .desc {
-                padding-bottom: 35px;
-
-                h1.sub-header {
-                    text-align: left;
-                    padding: 0;
-                    margin-top: 0;
-                    margin-bottom: 15px;
-                    font-size: 28px;
-
-                    &:hover {
-                        color: $hoverColor;
-                    }
-                }
-
-                p {
-                    font-size: 20px;
-                    padding-bottom: 20px;
-                }
-
-                a {
-                    color: $textColor;
+                .date {
                     font-size: 16px;
+                }
 
-                    &:hover {
-                        color: $hoverColor;
+                span {
+                    padding-right: 20px;
+                    
+                    i {
+                        padding-right: 9px;
+                    }
+
+                }
+
+                .img-container {
+                    height: 300px;
+                }
+
+                .desc {
+                    padding-bottom: 35px;
+
+                    h1.sub-header {
+                        text-align: left;
+                        padding: 0;
+                        margin-top: 0;
+                        margin-bottom: 15px;
+                        font-size: 28px;
+                        color: $headerColor;
+
+                        &:hover {
+                            color: $hoverColor;
+                        }
+                    }
+
+                    p {
+                        font-size: 20px;
+                        padding-bottom: 20px;
+                    }
+
+                    a {
+                        color: $textColor;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: $hoverColor;
+                        }
                     }
                 }
             }
-        }
 
-        .lSAction {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-
-            .lSPrev {
-                left: -70px;
+            .lSAction {
                 position: absolute;
+                width: 100%;
+                top: 50%;
+
+                .lSPrev {
+                    left: -70px;
+                    position: absolute;
+                }
+
+                .lSNext {
+                    right: -70px;
+                    position: absolute;
+                }
             }
 
-            .lSNext {
-                right: -70px;
-                position: absolute;
+            #newsSlider {
+                position: relative;
             }
-        }
 
-        #newsSlider {
-            position: relative;
-        }
-
-        .news-slider-container {
-            position: relative;
+            .news-slider-container {
+                position: relative;
+            }
         }
     }
 
