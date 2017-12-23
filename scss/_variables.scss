@@ -2,10 +2,12 @@
 $screenMedium: 992px;
 $screenSmall: 768px;
 $screenTiny: 500px;
-$headerColor: #064c92;
+// $headerColor: #064c92;
+$headerColor: #0078d7;
 $textColor: hsl(270, 2%, 25%);
 $descColor: #333333;
 $hoverColor: #fca300;
+$contentMaxWidth: 1250px;
 
 .gradientBlueBackground {
     background: rgba(60, 92, 176, 0.4);

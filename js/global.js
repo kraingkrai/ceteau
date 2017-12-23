@@ -63,6 +63,22 @@
         $('#newsSliderNext').on('click', function () {
             newsSlider.goToNextSlide();
         });
+
+        var clientSlider = $('#clientSlider').lightSlider({
+            item: 5,
+            controls: false,
+            speed: 800,
+            slideMargin: 50,
+            pager: false
+        });
+
+        $('#clientSliderPrev').on('click', function () {
+            clientSlider.goToPrevSlide();
+        });
+
+        $('#clientSliderNext').on('click', function () {
+            clientSlider.goToNextSlide();
+        });
     }
 
     function closeMenu() {
