@@ -79,6 +79,24 @@
         $('#clientSliderNext').on('click', function () {
             clientSlider.goToNextSlide();
         });
+
+        var productSlider = $('#productSlider').lightSlider({
+            item: 2,
+            vertical: true,
+            verticalHeight: 560,
+            controls: false,
+            speed: 800,
+            slideMargin: 50,
+            pager: false
+        });
+
+        $('#productSliderPrev').on('click', function () {
+            productSlider.goToPrevSlide();
+        });
+
+        $('#productSliderNext').on('click', function () {
+            productSlider.goToNextSlide();
+        });
     }
 
     function closeMenu() {

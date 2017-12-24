@@ -215,24 +215,94 @@ page.home {
     .product {
         padding: 60px 0;
 
+        .main-header {
+            text-align: center;
+            padding-bottom: 35px;
+        }
+
         .row {
             margin: auto;
             max-width: $contentMaxWidth;
-        }
 
-        .desc {
-            padding: 100px 15px 0 45px;
-    
-            .detail {
-                padding-top: 25px;
-                padding-bottom: 40px;
-                font-size: 22px;
-                color: $descColor;
+            .desc {
+                position: relative;
+
+                .img-container {
+                    height: 650px;
+                    width: 100%;
+                }
+
+                .image-desc {
+                    color: #fff;
+                    position: absolute;
+                    top: 22px;
+                    left: 50px;
+
+                    h1 {
+                        font-family: 'Gotham Black';
+                        text-transform: uppercase;
+                        font-size: 30px;
+                    }
+
+                    .detail {
+                        color: #fff;
+                        padding: 40px 0 60px 0;
+                        font-size: 30px;
+                    }
+                }
             }
-        }
 
-        .img-container {
-            height: 600px;
+            .product-list {
+                position: relative;
+                height: 560px;
+                margin-top: 43px;
+
+                .img-container {
+                    height: 120px;
+                }
+                
+                .product-desc {
+                    height: 140px;
+                    background-color: #e3f5ff;
+                    padding: 15px 0 10px 10px;
+
+                    .product-name {
+                        font-family: 'Gotham Bold';
+                    }
+
+                    a {
+                        color: $hoverColor;
+                    }
+                }
+
+                .lSAction {
+                    position: absolute;
+                    width: 100%;
+                    height: 560px;
+
+                    .lSPrev, .lSNext {
+                        left: 48%;
+                    }
+                    
+                    .lSPrev {
+                        top: -35px;
+                        -webkit-transform: rotate(270deg);
+                        -moz-transform: rotate(270deg);
+                        -o-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        transform: rotate(270deg);
+                    }
+
+                    .lSNext {
+                        margin-top: 292px;
+                        -webkit-transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                    }
+                }
+            }
         }
     }
 
