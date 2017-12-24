@@ -23,6 +23,14 @@
     $('#menuContainer').click(function (event) {
         event.stopPropagation();
     });
+
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+            $("header").addClass("active");
+        } else {
+            $("header").removeClass("active");
+        }
+    });
     //Event End
 
     //Function Start

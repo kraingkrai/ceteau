@@ -66,13 +66,31 @@
 }
 
 header {
-    padding: 30px 0;
-    position: absolute;
+    padding: 30px 0 10px 0;
+    position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     right: 0;
     @extend .gradientBlueBackground;
+    background-color: rgba(0, 0, 0, .2);
+
+    &.active {
+        background: none;
+        background-color: #fff;
+
+        .logo-blue {
+            display: block !important;
+        }
+
+        .logo-white {
+            display: none;
+        }
+
+        .top-menu nav a {
+            color: $headerColor;
+        }
+    }
 
     .logo {
         float: left;
@@ -94,9 +112,40 @@ header {
     }
 
     .top-menu {
+        display: block;
         float: right;
         text-align: right;
         padding-top: 25px;
+        font-size: 30px;
+
+        @media only screen and (max-width: $screenTopMenu) {
+            display: none;
+        }
+
+        nav {
+            a {
+                text-transform: uppercase;
+                color: #fff;
+                font-family: 'Gotham Bold';
+                font-size: 20px;
+                padding-right: 25px;
+
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    .top-menu-mobile {
+        display: none;
+        float: right;
+        text-align: right;
+        padding-top: 25px;
+
+        @media only screen and (max-width: $screenTopMenu) {
+            display: block;
+        }
 
         i {
             cursor: pointer;
