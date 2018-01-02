@@ -29,6 +29,11 @@ page.home {
             right: 0;
             margin: auto;
             z-index: 999;
+
+            @media only screen and (max-width: $contentMaxWidth) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
 
         .slogan {
@@ -43,23 +48,20 @@ page.home {
 
             h1 {
                 font-family: 'Gotham Black', 'Open Sans';
-                color: $headerColor;
+                color: $hoverColor;
                 text-transform: uppercase;
                 font-size: 36px;
+                // margin-left: 310px;
 
                 @media only screen and (max-width: $screenSmall) {
                     font-size: 36px;
                 }
             }
-
-            a {
-                float: right;
-            }
         }
     }
 
     .concept {
-        padding: 40px 0 80px 0;
+        padding: 20px 50px 50px 50px;
         overflow: hidden;
         text-align: center;
         max-width: $contentMaxWidth;
@@ -67,7 +69,7 @@ page.home {
 
         .detail {
             padding-top: 25px;
-            font-size: 22px;
+            font-size: 15px;
             margin-left: auto;
             margin-right: auto;
             color: $descColor;
@@ -128,11 +130,11 @@ page.home {
         color: $textColor;
 
         h1 {
-            padding: 40px 0 75px 0;
+            padding: 20px 0 40px 0;
+            text-transform: uppercase;
         }
 
         .row {
-            padding-bottom: 50px;
             max-width: $contentMaxWidth;
             margin: auto;
 
@@ -140,9 +142,9 @@ page.home {
                 text-align: center;
 
                 .item {
-                    width: 100px;
-                    height: 100px;
-                    background-size: 100px 100px;
+                    width: 60px;
+                    height: 60px;
+                    background-size: 60px 60px;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -165,13 +167,13 @@ page.home {
 
                 h3 {
                     font-family: 'Gotham Black';
-                    font-size: 24px;
+                    font-size: 18px;
                     color: $headerColor;
                     margin-left: auto;
                     margin-right: auto;
                     padding-top: 10px;
                     position: relative;
-                    height: 115px;
+                    height: 48px;
 
                     &:before {
                         content: "";
@@ -211,8 +213,8 @@ page.home {
 
                 p {
                     font-family: 'Gotham Book', 'Open Sans';
-                    font-size: 16px;
-                    padding: 20px 10px 10px 0;
+                    font-size: 14px;
+                    padding: 7px 10px 10px 0;
                 }
             }
         }
@@ -223,12 +225,11 @@ page.home {
     }
 
     .product {
-        padding: 60px 0;
-        background-color: $grayContentBackground;
+        padding: 20px 0;
 
         .main-header {
             text-align: center;
-            padding-bottom: 35px;
+            padding-bottom: 30px;
         }
 
         .row {
@@ -258,7 +259,7 @@ page.home {
                     .detail {
                         color: #fff;
                         padding: 40px 0 60px 0;
-                        font-size: 30px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -274,7 +275,7 @@ page.home {
                 
                 .product-desc {
                     height: 140px;
-                    background-color: #e3f5ff;
+                    background-color: $grayContentBackground;
                     padding: 15px 0 10px 10px;
 
                     .product-name {
@@ -345,7 +346,7 @@ page.home {
             h1 {
                 font-family: 'Gotham Book';
                 color: #fff;
-                font-size: 42px;
+                font-size: 30px;
 
                 &.main-header {
                     font-family: 'Gotham Black' !important;
@@ -357,7 +358,7 @@ page.home {
 
                 .location {
                     font-family: 'Gotham Book';
-                    font-size: 22px;
+                    font-size: 20px;
 
                     @media only screen and (max-width: $screenSmall) {
                         font-size: 20px;

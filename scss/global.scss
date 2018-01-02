@@ -66,12 +66,13 @@
 }
 
 header {
-    padding: 30px 0 10px 0;
+    padding: 10px 0;
     position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     right: 0;
+    height: 79px;
     @extend .gradientBlackBackground;
 
     &.active {
@@ -86,7 +87,7 @@ header {
             display: none;
         }
 
-        .top-menu nav a {
+        .top-menu nav a, .top-menu-mobile i {
             color: $headerColor;
         }
     }
@@ -95,7 +96,7 @@ header {
         float: left;
 
         img {
-            width: 250px;
+            width: 210px;
         }
 
         @media only screen and (max-width: $screenTiny) {
@@ -106,18 +107,43 @@ header {
     }
 
     .header-container {
-        // padding-left: 50px;
-        // padding-right: 50px;
         max-width: $contentMaxWidth;
         margin: auto;
+        position: relative;
+
+        @media only screen and (max-width: $contentMaxWidth) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .lang-options {
+            color: #fff;
+            position: absolute;
+            right: 0;
+            margin-top: -8px;
+            font-size: 11px;
+
+            @media only screen and (max-width: $contentMaxWidth) {
+                padding-right: 15px;
+            }
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: $headerColor;
+                }
+            }
+        }
     }
 
     .top-menu {
         display: block;
         float: right;
         text-align: right;
-        padding-top: 25px;
+        padding: 0px;
         font-size: 30px;
+        margin-top: 19px;
 
         @media only screen and (max-width: $screenTopMenu) {
             display: none;
@@ -128,11 +154,15 @@ header {
                 text-transform: uppercase;
                 color: #fff;
                 font-family: 'Gotham Bold';
-                font-size: 20px;
-                padding-right: 25px;
+                font-size: 16px;
+                padding-right: 14px;
 
                 &:last-child {
                     padding-right: 0px;
+                }
+
+                &:hover {
+                    color: $headerColor;
                 }
             }
         }
@@ -298,14 +328,13 @@ footer {
             color: #fff;
         }
         
-        .lang-options {
-            font-size: 22px;
+        .close-menu-container {
 
             span {
-                font-size: 45px;
+                font-size: 40px;
                 position: absolute;
                 right: 48px;
-                top: 32px;
+                top: 36px;
                 cursor: pointer;
             }
         }
@@ -313,7 +342,7 @@ footer {
         .menu-items {
             list-style: none;
             padding: 0;
-            margin-top: 90px;
+            margin-top: 80px;
 
             li {
                 padding: 10px 0;
@@ -321,24 +350,24 @@ footer {
                 .menu-text {
                     text-transform: uppercase;
                     font-family: 'Gotham Black';
-                    font-size: 32px;
+                    font-size: 24px;
                 }
 
                 .menu-icon i {
                     float: right;
-                    font-size: 45px;
+                    font-size: 35px;
                     font-weight: bold;
                     color: $hoverColor;
-                    line-height: 40px;
+                    line-height: 29px;
                 }
             }
         }
 
         .social-items {
-            font-size: 29px;
+            font-size: 25px;
             list-style: none;
             padding: 0;
-            margin-top: 80px;
+            margin-top: 60px;
 
             li {
                 float: left;
@@ -357,9 +386,9 @@ footer {
     color: #fff;
     background-color: #fca300;
     font-size: 22px;
-    padding: 15px 60px;
+    padding: 5px 35px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 34px;
 
     &:hover {
         color: #fff;
@@ -426,8 +455,7 @@ footer {
         }
         &.active {
             a {
-                // background-color: #032f72;
-                background-color: #0078d7;
+                background-color: $headerColor;
             }
         }
     }
@@ -436,13 +464,13 @@ footer {
 h1.main-header {
     color: $headerColor;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Gotham Black', 'Open Sans';
 }
 
 h1.sub-header {
     color: $headerColor;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Gotham Black', 'Open Sans';
 }
 
