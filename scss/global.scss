@@ -331,7 +331,7 @@ footer {
         .close-menu-container {
 
             span {
-                font-size: 40px;
+                font-size: 30px;
                 position: absolute;
                 right: 48px;
                 top: 36px;
@@ -350,21 +350,21 @@ footer {
                 .menu-text {
                     text-transform: uppercase;
                     font-family: 'Gotham Black';
-                    font-size: 24px;
+                    font-size: 18px;
                 }
 
                 .menu-icon i {
                     float: right;
-                    font-size: 35px;
+                    font-size: 28px;
                     font-weight: bold;
                     color: $hoverColor;
-                    line-height: 29px;
+                    line-height: 20px;
                 }
             }
         }
 
         .social-items {
-            font-size: 25px;
+            font-size: 22px;
             list-style: none;
             padding: 0;
             margin-top: 60px;
@@ -410,6 +410,10 @@ footer {
     .lSAction {
         a {
             background-image: url('../img/icons/arrow-right-orange.png');
+            
+            &:hover {
+                background-image: url('../img/icons/arrow-right-blue.png');
+            }
         }
     }
 }
@@ -418,9 +422,13 @@ footer {
 
     a {
         opacity: 1;
+        width: 20px;
+        height: 32px;
         background-image: url('../img/icons/arrow-right.png');
-        width: 26px;
-        height: 42px;
+
+        &:hover {
+            background-image: url('../img/icons/arrow-right-blue.png');
+        }
     }
 
     .lSNext, .lSPrev {

@@ -43,7 +43,7 @@
             loop: true,
             pause: 5000,
             mode: 'fade',
-            controls: false
+            pager: false
         });
 
         $('#projectSlider').lightSlider({
@@ -91,7 +91,7 @@
         var productSlider = $('#productSlider').lightSlider({
             item: 2,
             vertical: true,
-            verticalHeight: 560,
+            verticalHeight: 650,
             controls: false,
             speed: 800,
             slideMargin: 50,
