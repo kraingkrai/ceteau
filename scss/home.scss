@@ -41,8 +41,6 @@ page.home {
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             width: 550px;
-            padding: 5px 0px 20px 20px;
-            @extend .gradientBlackBackground;
 
             @media only screen and (max-width: $screenSmall) {
                 width: 100%;
@@ -50,7 +48,7 @@ page.home {
 
             h1 {
                 font-family: 'Gotham Black', 'Open Sans';
-                color: #fff;
+                color: $headerColor;
                 text-transform: uppercase;
                 font-size: 36px;
 
@@ -387,6 +385,7 @@ page.home {
     }
 
     section.news {
+        font-family: 'Gotham Book';
         color: #fff;
         background-color: #009cde;
         background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
