@@ -155,6 +155,7 @@ header {
 
                 &:hover {
                     color: $headerColor;
+                    opacity: 1;
                 }
             }
         }
@@ -415,6 +416,7 @@ footer {
 }
 
 .lSAction {
+    z-index: 99999;
 
     a {
         opacity: 1;
@@ -428,6 +430,7 @@ footer {
     }
 
     .lSNext, .lSPrev {
+        z-index: 99999;
         background-position: initial;
     }
 
