@@ -71,6 +71,10 @@ header {
     &.active {
         background: none;
         background-color: #fff;
+        
+        .top-menu nav a, .top-menu-mobile i, .lang-options, .lang-options a {
+            color: $headerColor !important;
+        }
 
         .logo-blue {
             display: block !important;
@@ -78,10 +82,6 @@ header {
 
         .logo-white {
             display: none;
-        }
-
-        .top-menu nav a, .top-menu-mobile i {
-            color: $headerColor;
         }
     }
 
@@ -253,15 +253,19 @@ footer {
             &.sub {
                 font-family: 'Gotham Book';
                 font-size: 14px;
-                color: #827b86;
+                color: $subFooterColor;
                 padding-bottom: 5px;
+            }
+
+            &:hover {
+                color: $headerColor;
             }
         }
 
         p {
             font-family: 'Gotham Book';
             font-size: 14px;
-            color: #827b86;
+            color: $subFooterColor;
         }
 
         .space {
@@ -466,13 +470,13 @@ h1.main-header {
     color: $headerColor;
     text-transform: uppercase;
     font-size: 30px;
-    font-family: 'Gotham Black', 'Open Sans';
+    font-family: 'Gotham Bold', 'Open Sans';
 }
 
 h1.sub-header {
     color: $headerColor;
     font-size: 30px;
-    font-family: 'Gotham Black', 'Open Sans';
+    font-family: 'Gotham Bold', 'Open Sans';
 }
 
 .strong {

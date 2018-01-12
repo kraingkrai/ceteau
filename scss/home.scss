@@ -41,6 +41,7 @@ page.home {
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             width: 550px;
+            padding-left: 100px;
 
             @media only screen and (max-width: $screenSmall) {
                 width: 100%;
@@ -55,6 +56,10 @@ page.home {
                 @media only screen and (max-width: $screenSmall) {
                     font-size: 36px;
                 }
+            }
+
+            a.main-btn {
+                margin-top: 50px;
             }
         }
     }
@@ -182,6 +187,14 @@ page.home {
                         width: 50%;
                         left: 25%;
                         bottom: 0;
+                    }
+
+                    @media only screen and (max-width: 1300px) {
+                        margin-bottom: 20px;
+                        
+                        &:before {
+                            bottom: -10px;
+                        }
                     }
                 }
 
@@ -389,7 +402,6 @@ page.home {
         color: #fff;
         background-color: #009cde;
         background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
-        margin-top: 60px;
 
         .news-container {
             padding-bottom: 65px;
@@ -399,6 +411,7 @@ page.home {
             max-width: $contentMaxWidth;
 
             h1 {
+                margin-top: 0;
                 padding: 55px 0 40px 0; 
                 text-align: center;
                 color: #fff;
