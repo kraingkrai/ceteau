@@ -61,7 +61,7 @@
 header {
     padding: 10px 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 10000;
     top: 0;
     left: 0;
     right: 0;
@@ -124,6 +124,7 @@ header {
 
                 &:hover {
                     color: $headerColor;
+                    opacity: 1;
                 }
             }
         }
@@ -305,9 +306,10 @@ footer {
 
 .menu-container {
     position: fixed;
-    width: 400px;
-    right: -400px;
+    width: 300px;
+    right: -300px;
     top: 0;
+    padding: 50px 30px;    
     height: 100%;
     background-color: $headerColor;
     z-index: 99999;
@@ -416,7 +418,7 @@ footer {
 }
 
 .lSAction {
-    z-index: 99999;
+    z-index: 9999;
 
     a {
         opacity: 1;
@@ -430,7 +432,7 @@ footer {
     }
 
     .lSNext, .lSPrev {
-        z-index: 99999;
+        z-index: 9999;
         background-position: initial;
     }
 

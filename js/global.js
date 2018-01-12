@@ -108,7 +108,7 @@
     }
 
     function closeMenu() {
-        $('#menuContainer').css('right', '-400px');
+        $('#menuContainer').css('right', '-300px');
     }
     //Function End
 })($);

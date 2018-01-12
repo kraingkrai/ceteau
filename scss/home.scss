@@ -41,7 +41,7 @@ page.home {
             -ms-transform: translate(0, -50%);
             -webkit-transform: translate(0, -50%);
             width: 550px;
-            padding-left: 100px;
+            padding-left: 50px;
 
             @media only screen and (max-width: $screenSmall) {
                 width: 100%;
@@ -405,7 +405,7 @@ page.home {
         background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
 
         .news-container {
-            padding-bottom: 65px;
+            padding-bottom: 15px;
             width: 85%;
             margin-left: auto;
             margin-right: auto;
@@ -413,7 +413,7 @@ page.home {
 
             h1 {
                 margin-top: 0;
-                padding: 55px 0 40px 0; 
+                padding: 55px 0 5px 0; 
                 text-align: center;
                 color: #fff;
             }
