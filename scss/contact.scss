@@ -1,0 +1,197 @@
+@import "_variables.scss";
+
+page.contact {
+    .top-banner {
+        position: relative;
+        height: 500px;
+
+        img {
+            -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .page-title {
+            max-width: 1250px;
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 999;
+            padding-left: 15px;
+
+            h1 {
+                font-family: 'Gotham Black', 'Open Sans';
+                color: $headerColor;
+                text-transform: uppercase;
+                font-size: 36px;
+                @media only screen and (max-width: $screenSmall) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    .branch {
+        .branch-header {
+            height: 150px;
+            cursor: pointer;
+
+            .main-office, .regional-office {
+                height: 100%;
+                padding-top: 45px;
+                text-align: center;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: 'Gotham Bold';
+                }
+            }
+
+            .main-office {
+                background-color: #f2f6fa;
+                
+                h1 {
+                    color: $headerColor;
+                }
+            }
+    
+            .regional-office {
+                background-color: $headerColor;
+    
+                h1 {
+                    color: #fff;
+                }
+            }
+        }
+
+        .branch-list {
+            padding-top: 20px;
+            padding-bottom: 45px;
+            max-width: $contentMaxWidth;
+            margin: auto;
+
+            a {
+                width: 80%;
+                text-align: center;
+            }
+
+            .headOffice {
+                a {
+                    background-color: #f2f6fa;
+                    color: $hoverColor;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: $headerColor;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .regionalOffice {
+                display: none;
+            }
+        }
+    }
+
+    .location {
+
+        .row {
+            height: 300px;
+        }
+
+        .address {
+            background-color: #f2f6fa;
+            height: 100%;
+
+            .content {
+                max-width: $contentMaxWidth / 2;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                padding-left: 50px;
+
+                h3 {
+                    font-family: 'Gotham Bold';
+                    color: $headerColor;
+                    font-size: 20px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+                div, span {
+                    font-family: 'Gotham Book';
+                }
+
+                .contact-detail {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    line-height: 22px;
+                }
+
+                .location-detail {
+                    label {
+                        font-family: 'Gotham Bold';
+                    }
+                }
+
+                i {
+                    color: $hoverColor;
+                    font-size: 15px;
+                    padding-right: 10px;
+
+                    &.fa-phone, &.fa-map-marker {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+
+        .map {
+            background-color: #dfdfdf;
+            height: 100%;
+        }
+    }
+
+    .contact-form {
+        max-width: $contentMaxWidth;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Gotham Book';
+        }
+
+        .row {
+            padding-top: 40px;
+
+            .world-map {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .form {
+                .form-control {
+                    margin-bottom: 5px;
+                }
+
+                button {
+                    margin-top: 25px;
+                }
+            }
+        }
+
+    }
+}

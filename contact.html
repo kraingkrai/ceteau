@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="" />
+
+    <title>CeTeau</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Kanit:300,500|Open+Sans:400,700" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/pixeden/font-pixeden-stroke.css" rel="stylesheet" />
+    <link href="lib/pixeden/font-pixeden-fill.css" rel="stylesheet" />
+    <link href="lib/lightslider/css/lightslider.min.css" rel="stylesheet" />
+    <link href="lib/social-icon/social-icon.css" rel="stylesheet" />
+    <link href="lib/weact/dist/css/core.css" rel="stylesheet" />
+    <link href="css/global.css?v=14" rel="stylesheet" />
+    <!-- Contact Style Sheet -->
+    <link href="css/contact.css?v=1" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- AJAX Loader Start -->
+    <div id="ajaxLoading" class="modal">
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!-- AJAX Loader End -->
+    <header>
+        <div class="header-container">
+            <div class="lang-options">
+                <a href="">EN</a> |
+                <a href="">NL</a> |
+                <a href="">TH</a>
+            </div>
+            <a href="./index.html" class="logo logo-blue" style="display: none;">
+                <img src="img/logo/ceteau-logo.svg" onerror="this.src='img/logo/ceteau-logo.png'" alt="CeTeau" />
+
+            </a>
+            <a href="./index.html" class="logo logo-white">
+                <img src="img/logo/ceteau-logo-white.svg" onerror="this.src='img/logo/ceteau-logo-white.png'" alt="CeTeau" />
+            </a>
+            <div class="top-menu">
+                <nav>
+                    <a href="./index.html">HOME</a>
+                    <a href="">COMPANY</a>
+                    <a href="">PRODUCTS</a>
+                    <a href="">PROJECTS</a>
+                    <a href="">NEWS</a>
+                    <a href="./views/contact.html">CONTACT</a>
+                </nav>
+            </div>
+            <div class="top-menu-mobile">
+                <i id="openMenuBtn" class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="menuContainer" class="menu-container">
+        <div class="menu-content">
+            <div class="close-menu-container">
+                <span id="closeMenuBtn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+            <ul class="menu-items">
+                <li>
+                    <a href="">
+                        <span class="menu-text">Home</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Company</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Products</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">Projects</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="menu-text">News</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./views/contact.html">
+                        <span class="menu-text">Contact</span>
+                        <span class="menu-icon">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-items">
+                <li>
+                    <a href="">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body Content -->
+    <page class="contact">
+        <section class="top-banner">
+            <img src="img/contact/office.png" class="weactImageRatio" />
+            <div class="page-title">
+                <h1>
+                     Contact Us
+                </h1>
+            </div>
+        </section>
+
+        <section class="branch">
+            <div class="row branch-header">
+                <div id="toggleMainOffice" class="col-xs-6 main-office">
+                    <h1>Main Office</h1>
+                </div>
+                <div id="toggleRegionalOffice" class="col-xs-6 regional-office">
+                    <h1>Regional Offices</h1>
+                </div>
+            </div>
+            <div class="row branch-list">
+                <div class="col-xs-12 col-sm-4 headOffice">
+                    <a href="#" class="main-btn font-bold">The Netherlands</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 regionalOffice">
+                    <a href="#" class="main-btn font-bold">Malaysia</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 regionalOffice">
+                    <a href="#" class="main-btn font-bold">Mexico</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 regionalOffice">
+                    <a href="#" class="main-btn font-bold">Thailand</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 regionalOffice">
+                    <a href="#" class="main-btn font-bold">United Kingdom</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 address">
+                    <div class="content">
+                        <h3>CeTeau B.V.</h3>
+                        <div class="address-detail">
+                            It Gruthof 6<br />
+                            8754GZ, Makkum<br />
+                            The Netherlands
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fa fa-phone" aria-hidden="true"></i> <span>T +31 8 5888 3400</span><br />
+                            <i class="fa fa-fax" aria-hidden="true"></i> <span>F +31 8 5888 3400</span><br />
+                            <i class="fa fa-envelope" aria-hidden="true"></i> <span>E <a href="mailto:info@ceteau.com">info@ceteau.com</a></span>
+                        </div>
+                        <div class="location-detail">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> <label>GPS</label> :<span> N 53.051368 E 5.413554</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 map">
+                    <div id="ceteauMap"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h1 class="main-header">CeTeau Worldwide</h1>
+            <h3>Click map to find our agent in your country</h3>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 world-map">
+                    <img src="img/contact/map.jpg" />
+                </div>
+                <div class="col-xs-12 col-sm-4 form">
+                    <input type="text" class="form-control" placeholder="Name" maxlength="50">
+                    <input type="text" class="form-control" placeholder="Email" maxlength="30">
+                    <textarea class="form-control" cols="30" rows="3" placeholder="Your Message" maxlength="1000"></textarea>
+                    <input type="text" class="form-control" placeholder="Company" maxlength="50">
+                    <input type="text" class="form-control" placeholder="Phone Number" maxlength="15">
+                    <div class="g-recaptcha" data-sitekey="6Ld4-kIUAAAAAGWyV8k_wdy6-lGVdYpm-aogteYD"></div>
+                    <button class="btn btn-default" type="button">Submit</button>
+                </div>
+            </div>
+        </section>
+    </page>
+    <!-- Body Content -->
+
+    <footer>
+        <div class="container">
+            <nav class="row">
+                <div class="col-xs-12 col-sm-2">
+                    <a href="" class="main first">Follow Us</a>
+                    <div class="col-xs-12 social">
+                        <a href="">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a href="" class="main first">Products</a>
+                    <a href="" class="sub">Bio Energy</a>
+                    <a href="" class="sub">Geocell</a>
+                    <a href="" class="sub">Geo Fabrics</a>
+                    <a href="" class="sub">Geo Liners</a>
+                    <a href="" class="sub">PVC Sheet Piles</a>
+                    <a href="" class="sub">Vacuum Consolidation</a>
+                    <a href="" class="sub">Vertical Wick Drain</a>
+                    <a href="" class="sub">Vibro Compaction</a>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a href="" class="main">Download</a>
+                    <a href="" class="sub">Brochures</a>
+                    <a href="" class="sub">Video</a>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a href="" class="main">Company</a>
+                    <a href="" class="sub">Profile</a>
+                    <a href="" class="sub">Sustainability</a>
+                    <a href="" class="sub">Jobs</a>
+                    <a href="" class="sub">Agents</a>
+                    <a href="" class="sub">News</a>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a href="" class="main">Regional Offices</a>
+                    <a href="" class="sub">Malaysia</a>
+                    <a href="" class="sub">Mexico</a>
+                    <a href="" class="sub">Thailand</a>
+                    <a href="" class="sub">United Kingdom</a>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a class="main">Main Office</a>
+                    <a href="" class="sub">CeTeau BV</a>
+                    <p>
+                        It Gruthof 6
+                        <br />8754 GZ,
+                        <br />Makkum
+                        <br />The Netherlands
+                        <br />
+                        <a href="mailto:info@ceteau.com" class="sub">Info@ceteau.com</a>
+                        +31 85 888 3400
+                        <br />
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            var uluru = { lat: -25.363, lng: 131.044 };
+            var map = new google.maps.Map(document.getElementById('ceteauMap'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_VhxUQx_vOpVrmJkGc2X0RUXwBHEHOIE&callback=initMap"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/bootbox/bootbox.min.js"></script>
+    <script src="lib/lightslider/js/lightslider.min.js"></script>
+    <script src="lib/weact/src/js/core.js"></script>
+    <script src="js/global.js?v=3"></script>
+    <script src="js/contact.js?v=1"></script>
+</body>
+
+</html>
