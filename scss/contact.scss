@@ -38,6 +38,7 @@ page.contact {
     .branch {
         .branch-header {
             height: 150px;
+            margin: 0;
             cursor: pointer;
 
             .main-office, .regional-office {
@@ -73,6 +74,7 @@ page.contact {
             padding-bottom: 45px;
             max-width: $contentMaxWidth;
             margin: auto;
+            height: 215px;
 
             a {
                 width: 80%;
@@ -101,7 +103,8 @@ page.contact {
     .location {
 
         .row {
-            height: 300px;
+            height: 400px;
+            margin: 0;
         }
 
         .address {
@@ -152,10 +155,14 @@ page.contact {
 
         }
 
-        .map {
-            background-color: #dfdfdf;
-            height: 100%;
+        .map-container {
+            padding: 0;
+
+            .office-map {
+                height: 400px;
+            }
         }
+
     }
 
     .contact-form {

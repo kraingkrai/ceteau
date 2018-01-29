@@ -169,7 +169,7 @@
     <!-- Body Content -->
     <page class="contact">
         <section class="top-banner">
-            <img src="img/contact/office.png" class="weactImageRatio" />
+            <img id="officeImg" src="img/contact/office-netherland.jpg" class="weactImageRatio" />
             <div class="page-title">
                 <h1>
                      Contact Us
@@ -188,7 +188,7 @@
             </div>
             <div class="row branch-list">
                 <div class="col-xs-12 col-sm-4 headOffice">
-                    <a href="#" class="main-btn font-bold">The Netherlands</a>
+                    <a id="btnOfficeNetherland" href="#" class="main-btn font-bold">The Netherlands</a>
                 </div>
                 <div class="col-xs-12 col-sm-4 regionalOffice">
                     <a href="#" class="main-btn font-bold">Malaysia</a>
@@ -197,7 +197,7 @@
                     <a href="#" class="main-btn font-bold">Mexico</a>
                 </div>
                 <div class="col-xs-12 col-sm-4 regionalOffice">
-                    <a href="#" class="main-btn font-bold">Thailand</a>
+                    <a id="btnOfficeThailand" href="#" class="main-btn font-bold">Thailand</a>
                 </div>
                 <div class="col-xs-12 col-sm-4 regionalOffice">
                     <a href="#" class="main-btn font-bold">United Kingdom</a>
@@ -225,8 +225,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 map">
-                    <div id="ceteauMap"></div>
+                <div class="col-xs-12 col-sm-6 map-container">
+                    <div id="ceteauMap" class="office-map"></div>
                 </div>
             </div>
         </section>
@@ -324,22 +324,8 @@
         </div>
     </footer>
 
-    <script>
-        function initMap() {
-            var uluru = { lat: -25.363, lng: 131.044 };
-            var map = new google.maps.Map(document.getElementById('ceteauMap'), {
-                zoom: 4,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_VhxUQx_vOpVrmJkGc2X0RUXwBHEHOIE&callback=initMap"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_VhxUQx_vOpVrmJkGc2X0RUXwBHEHOIE&callback=initMap" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/bootbox/bootbox.min.js"></script>
