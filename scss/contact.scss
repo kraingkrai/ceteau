@@ -37,35 +37,15 @@ page.contact {
 
     .branch {
         .branch-header {
-            height: 150px;
-            margin: 0;
-            cursor: pointer;
+            max-width: $contentMaxWidth;
+            margin: auto;
+            padding: 45px 0 50px 0;
+            text-align: center;
 
-            .main-office, .regional-office {
-                height: 100%;
-                padding-top: 45px;
-                text-align: center;
-
-                h1 {
-                    font-size: 30px;
-                    font-family: 'Gotham Bold';
-                }
-            }
-
-            .main-office {
-                background-color: #f2f6fa;
-                
-                h1 {
-                    color: $headerColor;
-                }
-            }
-    
-            .regional-office {
-                background-color: $headerColor;
-    
-                h1 {
-                    color: #fff;
-                }
+            h1 {
+                font-size: 30px;
+                font-family: 'Gotham Bold';
+                color: $headerColor;
             }
         }
 
@@ -80,30 +60,24 @@ page.contact {
                 width: 80%;
                 text-align: center;
             }
+        }
 
-            .headOffice {
-                a {
-                    background-color: #f2f6fa;
-                    color: $hoverColor;
+        button {
+            width: 260px;
 
-                    &:hover {
-                        color: #fff;
-                        background-color: $headerColor;
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .regionalOffice {
-                display: none;
+            &.selected {
+                color: #fff;
+                background-color: $headerColor;
             }
         }
     }
 
     .location {
+        .row, .office-map {
+            height: 400px;
+        }
 
         .row {
-            height: 400px;
             margin: 0;
         }
 
@@ -157,12 +131,7 @@ page.contact {
 
         .map-container {
             padding: 0;
-
-            .office-map {
-                height: 400px;
-            }
         }
-
     }
 
     .contact-form {
@@ -183,9 +152,123 @@ page.contact {
         .row {
             padding-top: 40px;
 
+            .world-map, .world-map img {
+                width: 780px;
+            }
+
             .world-map {
-                img {
-                    width: 100%;
+                position: relative;
+            }
+
+            .map-points {
+                .map-location {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-width: 0px;
+                    border-color: transparent;
+                    background-color: #7F7F7F;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $headerColor;
+                    }
+                }
+
+                .mexico {
+                    top: 199px;
+                    left: 144px;
+                }
+
+                .panama {
+                    top: 218px;
+                    left: 176px;
+                }
+
+                .uk {
+                    top: 109px;
+                    left: 359px;
+                }
+
+                .france {
+                    top: 137px;
+                    left: 363px;
+                }
+
+                .netherland {
+                    top: 124px;
+                    left: 377px;
+                }
+
+                .turkey {
+                    top: 151px;
+                    left: 432px;
+                }
+
+                .iran {
+                    top: 167px;
+                    left: 478px;
+                }
+
+                .emirate {
+                    top: 195px;
+                    left: 476px;
+                }
+
+                .india {
+                    top: 207px;
+                    left: 528px;
+                }
+
+                .myanmar {
+                    top: 199px;
+                    left: 568px;
+                }
+
+                .thailand {
+                    top: 206px;
+                    left: 581px;
+                }
+
+                .vietnam {
+                    top: 192px;
+                    left: 593px;
+                }
+
+                .cambodia {
+                    top: 216px;
+                    left: 593px;
+                }
+
+                .philippines {
+                    top: 218px;
+                    left: 630px;
+                }
+
+                .maylaysia {
+                    top: 232px;
+                    left: 583px;
+                }
+
+                .indonesia {
+                    top: 249px;
+                    left: 582px;
+                }
+
+                .brunei {
+                    top: 242px;
+                    left: 608px;
+                }
+
+                .australia {
+                    top: 314px;
+                    left: 671px;
+                }
+
+                .nz {
+                    top: 333px;
+                    left: 740px;
                 }
             }
 
@@ -200,5 +283,44 @@ page.contact {
             }
         }
 
+    }
+}
+
+.modal {
+    .modal-location {
+        top: 20%;
+        width: 800px;
+
+        .modal-body {
+            padding: 0;
+        }
+
+        .country-map {
+            width: 400px;
+            height: 400px;
+            position: initial;
+        }
+
+        .row {
+            margin: 0;
+
+            div {
+                padding: 0;
+            }
+
+            .location-desc {
+                padding: 15px;
+                font-family: 'Gotham Book';
+
+                h3 {
+                    font-family: 'Gotham Bold';
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .web-logo {
+            width: 150px;
+        }
     }
 }

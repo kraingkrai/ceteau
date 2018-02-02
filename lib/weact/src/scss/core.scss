@@ -51,6 +51,12 @@ textarea {
     transition: none;
 }
 
+.map {
+    div {
+        @extend .no-animation;
+    }
+}
+
 .no-padding {
     padding: 0;
 }

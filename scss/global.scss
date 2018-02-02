@@ -381,6 +381,16 @@ footer {
 
 }
 
+.btn.main-btn {
+    border: 0 !important;
+    border-radius: 0px;
+
+    &:focus {
+        color: #fff;
+        outline:0;
+    }
+}
+
 .main-btn {
     color: #fff;
     background-color: #fca300;
