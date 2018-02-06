@@ -39,7 +39,7 @@ page.contact {
         .branch-header {
             max-width: $contentMaxWidth;
             margin: auto;
-            padding: 45px 0 50px 0;
+            padding: 20px 0 50px 0;
             text-align: center;
 
             h1 {
@@ -129,6 +129,12 @@ page.contact {
 
         }
 
+        .btn-contact-form {
+            font-family: 'Gotham Bold';
+            font-size: 18px;
+            padding: 5px 15px;
+        }
+
         .map-container {
             padding: 0;
         }
@@ -148,141 +154,128 @@ page.contact {
             font-size: 20px;
             font-family: 'Gotham Book';
         }
-
-        .row {
+            
+        .world-map, .world-map img {
+            width: 780px;
+        }
+            
+        .world-map {
+            position: relative;
             padding-top: 40px;
-
-            .world-map, .world-map img {
-                width: 780px;
-            }
-
-            .world-map {
-                position: relative;
-            }
-
-            .map-points {
-                .map-location {
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    border-width: 0px;
-                    border-color: transparent;
-                    background-color: #7F7F7F;
-                    border-radius: 5px;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: $headerColor;
-                    }
-                }
-
-                .mexico {
-                    top: 199px;
-                    left: 144px;
-                }
-
-                .panama {
-                    top: 218px;
-                    left: 176px;
-                }
-
-                .uk {
-                    top: 109px;
-                    left: 359px;
-                }
-
-                .france {
-                    top: 137px;
-                    left: 363px;
-                }
-
-                .netherland {
-                    top: 124px;
-                    left: 377px;
-                }
-
-                .turkey {
-                    top: 151px;
-                    left: 432px;
-                }
-
-                .iran {
-                    top: 167px;
-                    left: 478px;
-                }
-
-                .emirate {
-                    top: 195px;
-                    left: 476px;
-                }
-
-                .india {
-                    top: 207px;
-                    left: 528px;
-                }
-
-                .myanmar {
-                    top: 199px;
-                    left: 568px;
-                }
-
-                .thailand {
-                    top: 206px;
-                    left: 581px;
-                }
-
-                .vietnam {
-                    top: 192px;
-                    left: 593px;
-                }
-
-                .cambodia {
-                    top: 216px;
-                    left: 593px;
-                }
-
-                .philippines {
-                    top: 218px;
-                    left: 630px;
-                }
-
-                .maylaysia {
-                    top: 232px;
-                    left: 583px;
-                }
-
-                .indonesia {
-                    top: 249px;
-                    left: 582px;
-                }
-
-                .brunei {
-                    top: 242px;
-                    left: 608px;
-                }
-
-                .australia {
-                    top: 314px;
-                    left: 671px;
-                }
-
-                .nz {
-                    top: 333px;
-                    left: 740px;
-                }
-            }
-
-            .form {
-                .form-control {
-                    margin-bottom: 5px;
-                }
-
-                button {
-                    margin-top: 25px;
-                }
-            }
+            margin: auto;
         }
 
+        .map-points {
+            .map-location {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-width: 0px;
+                border-color: transparent;
+                background-color: #7F7F7F;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $headerColor;
+                }
+            }
+
+            .mexico {
+                top: 199px;
+                left: 144px;
+            }
+
+            .panama {
+                top: 218px;
+                left: 176px;
+            }
+
+            .uk {
+                top: 109px;
+                left: 359px;
+            }
+
+            .france {
+                top: 137px;
+                left: 363px;
+            }
+
+            .netherland {
+                top: 124px;
+                left: 377px;
+            }
+
+            .turkey {
+                top: 151px;
+                left: 432px;
+            }
+
+            .iran {
+                top: 167px;
+                left: 478px;
+            }
+
+            .emirate {
+                top: 195px;
+                left: 476px;
+            }
+
+            .india {
+                top: 207px;
+                left: 528px;
+            }
+
+            .myanmar {
+                top: 199px;
+                left: 568px;
+            }
+
+            .thailand {
+                top: 206px;
+                left: 581px;
+            }
+
+            .vietnam {
+                top: 192px;
+                left: 593px;
+            }
+
+            .cambodia {
+                top: 216px;
+                left: 593px;
+            }
+
+            .philippines {
+                top: 218px;
+                left: 630px;
+            }
+
+            .maylaysia {
+                top: 232px;
+                left: 583px;
+            }
+
+            .indonesia {
+                top: 249px;
+                left: 582px;
+            }
+
+            .brunei {
+                top: 242px;
+                left: 608px;
+            }
+
+            .australia {
+                top: 314px;
+                left: 671px;
+            }
+
+            .nz {
+                top: 333px;
+                left: 740px;
+            }
+        }
     }
 }
 
@@ -321,6 +314,19 @@ page.contact {
 
         .web-logo {
             width: 150px;
+        }
+    }
+
+    .modal-contact-form {
+        top: 20%;
+
+        .form {
+            .form-control {
+                margin-bottom: 5px;
+            }
+            button {
+                margin-top: 25px;
+            }
         }
     }
 }

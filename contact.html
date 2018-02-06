@@ -181,7 +181,7 @@
                 <div class="col-xs-12 col-sm-6 main-office">
                     <h1>Main Office</h1>
                     <div class="row">
-                        <button id="btnOfficeNetherland" href="#" class="btn main-btn font-bold selected">The Netherlands</button>
+                        <button id="btnOfficeNetherland" class="btn main-btn font-bold selected">The Netherlands</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 regional-office">
@@ -222,6 +222,7 @@
                         <div class="location-detail">
                             <i class="fa fa-map-marker" aria-hidden="true"></i> <label>GPS</label> :<span> N 53.051368 E 5.413554</span>
                         </div>
+                        <button id="btnShowContactForm" type="button" class="btn main-btn btn-contact-form">Contact Form</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 map-container">
@@ -233,41 +234,28 @@
         <section class="contact-form">
             <h1 class="main-header">Worldwide Distributor Network</h1>
             <h3>Click map to find our agent in your country</h3>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-lg-8">
-                    <div class="world-map">
-                        <img src="img/contact/map.jpg" />
-                        <div class="map-points">
-                            <div class="map-location mapLocation mexico" location="mexcio" data-toggle="tooltip" data-placement="top" title="Mexico"></div>
-                            <div class="map-location mapLocation panama" location="panama" data-toggle="tooltip" data-placement="top" title="Panama"></div>
-                            <div class="map-location mapLocation uk" location="uk" data-toggle="tooltip" data-placement="top" title="United Kingdom"></div>
-                            <div class="map-location mapLocation france" location="france" data-toggle="tooltip" data-placement="top" title="France"></div>
-                            <div class="map-location mapLocation netherland" location="netherland" data-toggle="tooltip" data-placement="top" title="Netherland"></div>
-                            <div class="map-location mapLocation turkey" location="turkey" data-toggle="tooltip" data-placement="top" title="Turkey"></div>
-                            <div class="map-location mapLocation iran" location="iran" data-toggle="tooltip" data-placement="top" title="Iran"></div>
-                            <div class="map-location mapLocation emirate" location="emirate" data-toggle="tooltip" data-placement="top" title="United Arab Emirates"></div>
-                            <div class="map-location mapLocation india" location="india" data-toggle="tooltip" data-placement="top" title="India"></div>
-                            <div class="map-location mapLocation myanmar" location="myanmar" data-toggle="tooltip" data-placement="top" title="Myanmar"></div>
-                            <div class="map-location mapLocation thailand" location="thailand" data-toggle="tooltip" data-placement="top" title="Thailand"></div>
-                            <div class="map-location mapLocation vietnam" location="vietnam" data-toggle="tooltip" data-placement="top" title="Vietnam"></div>
-                            <div class="map-location mapLocation cambodia" location="cambodia" data-toggle="tooltip" data-placement="top" title="Cambodia"></div>
-                            <div class="map-location mapLocation philippines" location="philippines" data-toggle="tooltip" data-placement="top" title="Philippines"></div>
-                            <div class="map-location mapLocation maylaysia" location="maylaysia" data-toggle="tooltip" data-placement="top" title="Maylaysia"></div>
-                            <div class="map-location mapLocation indonesia" location="indonesia" data-toggle="tooltip" data-placement="top" title="Indonesia"></div>
-                            <div class="map-location mapLocation brunei" location="brunei" data-toggle="tooltip" data-placement="top" title="Brunei Darussalam"></div>
-                            <div class="map-location mapLocation australia" location="australia" data-toggle="tooltip" data-placement="top" title="Australia"></div>
-                            <div class="map-location mapLocation nz" location="nz" data-toggle="tooltip" data-placement="top" title="New Zealand"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-lg-4 form">
-                    <input type="text" class="form-control" placeholder="Name" maxlength="50">
-                    <input type="text" class="form-control" placeholder="Email" maxlength="30">
-                    <textarea class="form-control" cols="30" rows="3" placeholder="Your Message" maxlength="1000"></textarea>
-                    <input type="text" class="form-control" placeholder="Company" maxlength="50">
-                    <input type="text" class="form-control" placeholder="Phone Number" maxlength="15">
-                    <div class="g-recaptcha" data-sitekey="6Ld4-kIUAAAAAGWyV8k_wdy6-lGVdYpm-aogteYD"></div>
-                    <button class="btn btn-default" type="button">Submit</button>
+            <div class="world-map">
+                <img src="img/contact/map.jpg" />
+                <div class="map-points">
+                    <div class="map-location mapLocation mexico" location="mexcio" data-toggle="tooltip" data-placement="top" title="Mexico"></div>
+                    <div class="map-location mapLocation panama" location="panama" data-toggle="tooltip" data-placement="top" title="Panama"></div>
+                    <div class="map-location mapLocation uk" location="uk" data-toggle="tooltip" data-placement="top" title="United Kingdom"></div>
+                    <div class="map-location mapLocation france" location="france" data-toggle="tooltip" data-placement="top" title="France"></div>
+                    <div class="map-location mapLocation netherland" location="netherland" data-toggle="tooltip" data-placement="top" title="Netherland"></div>
+                    <div class="map-location mapLocation turkey" location="turkey" data-toggle="tooltip" data-placement="top" title="Turkey"></div>
+                    <div class="map-location mapLocation iran" location="iran" data-toggle="tooltip" data-placement="top" title="Iran"></div>
+                    <div class="map-location mapLocation emirate" location="emirate" data-toggle="tooltip" data-placement="top" title="United Arab Emirates"></div>
+                    <div class="map-location mapLocation india" location="india" data-toggle="tooltip" data-placement="top" title="India"></div>
+                    <div class="map-location mapLocation myanmar" location="myanmar" data-toggle="tooltip" data-placement="top" title="Myanmar"></div>
+                    <div class="map-location mapLocation thailand" location="thailand" data-toggle="tooltip" data-placement="top" title="Thailand"></div>
+                    <div class="map-location mapLocation vietnam" location="vietnam" data-toggle="tooltip" data-placement="top" title="Vietnam"></div>
+                    <div class="map-location mapLocation cambodia" location="cambodia" data-toggle="tooltip" data-placement="top" title="Cambodia"></div>
+                    <div class="map-location mapLocation philippines" location="philippines" data-toggle="tooltip" data-placement="top" title="Philippines"></div>
+                    <div class="map-location mapLocation maylaysia" location="maylaysia" data-toggle="tooltip" data-placement="top" title="Maylaysia"></div>
+                    <div class="map-location mapLocation indonesia" location="indonesia" data-toggle="tooltip" data-placement="top" title="Indonesia"></div>
+                    <div class="map-location mapLocation brunei" location="brunei" data-toggle="tooltip" data-placement="top" title="Brunei Darussalam"></div>
+                    <div class="map-location mapLocation australia" location="australia" data-toggle="tooltip" data-placement="top" title="Australia"></div>
+                    <div class="map-location mapLocation nz" location="nz" data-toggle="tooltip" data-placement="top" title="New Zealand"></div>
                 </div>
             </div>
         </section>
@@ -367,6 +355,24 @@
                                 E-mail : <a href="mailto:info@mexicanwickdrain.com">info@mexicanwickdrain.com</a> <br />
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContactForm" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-contact-form" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form">
+                        <input type="text" class="form-control" placeholder="Name" maxlength="50">
+                        <input type="text" class="form-control" placeholder="Email" maxlength="30">
+                        <textarea class="form-control" cols="30" rows="3" placeholder="Your Message" maxlength="1000"></textarea>
+                        <input type="text" class="form-control" placeholder="Company" maxlength="50">
+                        <input type="text" class="form-control" placeholder="Phone Number" maxlength="15">
+                        <div class="g-recaptcha" data-sitekey="6Ld4-kIUAAAAAGWyV8k_wdy6-lGVdYpm-aogteYD"></div>
+                        <button class="btn btn-default" type="button">Submit</button>
                     </div>
                 </div>
             </div>

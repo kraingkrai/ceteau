@@ -30,6 +30,13 @@ var countryMap = '';
         }, 1000);
 
     });
+
+    $('#btnShowContactForm').click(function () {
+        $('#modalContactForm').modal({
+            backdrop: true,
+            keyboard: false
+        });
+    });
     //Page Load
 
     //Event Start    
