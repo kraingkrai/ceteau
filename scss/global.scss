@@ -24,6 +24,14 @@
     font-display: 'block';
 }
 
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../lib/fonts/gotham/Gotham-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: 'block';
+}
+
 * {
     font-family: 'Gotham Book', 'Open Sans';
     font-weight: normal;
