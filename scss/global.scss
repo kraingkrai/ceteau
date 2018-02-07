@@ -1,31 +1,11 @@
 @import "_variables.scss";
 
 @font-face {
-    font-family: 'Gotham Light';
-    src: url('../lib/fonts/gotham/Gotham-Light.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Gotham Book';
     src: url('../lib/fonts/gotham/Gotham-Book.otf');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Medium';
-    src: url('../lib/fonts/gotham/Gotham-Medium.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Ultra';
-    src: url('../lib/fonts/gotham/Gotham-Ultra.otf');
-    font-weight: normal;
-    font-style: normal;
+    font-display: 'block';
 }
 
 @font-face {
@@ -33,6 +13,7 @@
     src: url('../lib/fonts/gotham/Gotham-Bold.otf');
     font-weight: normal;
     font-style: normal;
+    font-display: 'block';
 }
 
 @font-face {
@@ -40,17 +21,11 @@
     src: url('../lib/fonts/gotham/Gotham-Black.otf');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Thin';
-    src: url('../lib/fonts/gotham/Gotham-Thin.otf');
-    font-weight: normal;
-    font-style: normal;
+    font-display: 'block';
 }
 
 * {
-    font-family: 'Gotham Light', 'Open Sans', 'Kanit';
+    font-family: 'Gotham Book', 'Open Sans';
     font-weight: normal;
 }
 

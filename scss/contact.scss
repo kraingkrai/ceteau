@@ -159,11 +159,15 @@ page.contact {
             width: 780px;
         }
             
-        .world-map {
-            position: relative;
+        .world-map-container {
             padding-top: 40px;
-            margin: auto;
+            
+            .world-map {
+                position: relative;
+                margin: auto;
+            }
         }
+
 
         .map-points {
             .map-location {
