@@ -13,6 +13,14 @@ page.contact {
             object-fit: fill;
         }
 
+        .item {
+            height: 500px;
+            
+            @media only screen and (max-width: $screenTiny) {
+                height: 400px;
+            }
+        }
+
         .page-title {
             max-width: 1250px;
             position: absolute;

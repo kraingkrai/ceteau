@@ -403,8 +403,7 @@ page.home {
     section.news {
         font-family: 'Gotham Book';
         color: #fff;
-        background-color: #009cde;
-        background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+        @extend .radialBlueBackground;
 
         .news-container {
             padding-bottom: 15px;

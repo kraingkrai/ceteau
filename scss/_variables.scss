@@ -32,6 +32,11 @@ $contentMaxWidth: 1250px;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
 }
 
+.radialBlueBackground {
+    background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+}
+
 .font-medium {
     font-family: 'Gotham Medium';
 }

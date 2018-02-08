@@ -1,20 +1,21 @@
-var countryMap = '';
-
 (function ($) {
     //Variables Start
+    var locationSlider = '';
+    var countryMap = '';
     //Variables End
 
     //Page Start
     initMap();
+    initContactSlider();
 
     $('#btnOfficeNetherland').click(function () {
-        $('#officeImg').attr('src', 'img/contact/office-netherland.jpg');
-        changeSelectedBranch($(this));
+        var slideIdx = $('.imgNetherland').attr('slide-index');
+        changeSelectedBranch($(this), slideIdx);
     });
 
     $('#btnOfficeThailand').click(function () {
-        $('#officeImg').attr('src', 'img/contact/office-thailand.jpg');
-        changeSelectedBranch($(this));
+        var slideIdx = $('.imgThailand').attr('slide-index');
+        changeSelectedBranch($(this), slideIdx);
     });
 
     $('.mapLocation').tooltip();
@@ -43,7 +44,9 @@ var countryMap = '';
     //Event End
 
     //Function Start    
-    function changeSelectedBranch(elem) {
+    function changeSelectedBranch(elem, slideIdx) {
+        locationSlider.goToSlide(parseInt(slideIdx));
+
         $('section.branch button').removeClass('selected');
         elem.addClass('selected');
     }
@@ -63,7 +66,6 @@ var countryMap = '';
     }
 
     function initCountryMap() {
-        // var location = { lat: 19.435457, lng: -99.173743 };
         var location = { lat: 53.051368, lng: 5.413554 };
         countryMap = new google.maps.Map(document.getElementById('countryMap'), {
             zoom: 15,
@@ -74,6 +76,19 @@ var countryMap = '';
         var marker = new google.maps.Marker({
             position: location,
             map: countryMap
+        });
+    }
+
+    function initContactSlider() {
+        locationSlider = $('#locationSlider').lightSlider({
+            item: 1,
+            slideMargin: 0,
+            speed: 1000,
+            auto: true,
+            loop: true,
+            pause: 5000,
+            mode: 'fade',
+            pager: false
         });
     }
     //Function End
