@@ -475,3 +475,10 @@ h1.sub-header {
     font-family: 'Gotham Book';
     font-weight: bold;
 }
+
+.jump-target::before {
+    content: "";
+    display: block;
+    margin-top: -119px;
+    padding-top: 119px;
+}
