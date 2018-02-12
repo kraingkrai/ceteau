@@ -482,3 +482,11 @@ h1.sub-header {
     margin-top: -119px;
     padding-top: 119px;
 }
+
+.modal {
+    .close {
+        span {
+            font-weight: bold;
+        }
+    }
+}
