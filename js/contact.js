@@ -62,6 +62,7 @@
     //Function Start    
     function changeSelectedBranch(elem, slideIdx) {
         locationSlider.goToSlide(parseInt(slideIdx));
+        locationSlider.pause();
 
         $('section.branch button').removeClass('selected');
         elem.addClass('selected');
@@ -112,6 +113,7 @@
         var office = Global_GetUrlVars()['office'];
         var slideIdx = '';
         var btn = '';
+
         switch (office) {
             case 'malaysia':
                 slideIdx = $('.imgMaylaysia').attr('slide-index');
