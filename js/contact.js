@@ -13,9 +13,24 @@
         var slideIdx = $('.imgNetherland').attr('slide-index');
         changeSelectedBranch($(this), slideIdx);
     });
+    
+    $('#btnOfficeMalaysia').click(function () {
+        var slideIdx = $('.imgMaylaysia').attr('slide-index');
+        changeSelectedBranch($(this), slideIdx);
+    });
+    
+    $('#btnOfficeMexico').click(function () {
+        var slideIdx = $('.imgMexico').attr('slide-index');
+        changeSelectedBranch($(this), slideIdx);
+    });
 
     $('#btnOfficeThailand').click(function () {
         var slideIdx = $('.imgThailand').attr('slide-index');
+        changeSelectedBranch($(this), slideIdx);
+    });
+    
+    $('#btnOfficeUK').click(function () {
+        var slideIdx = $('.imgUnitedKingdom').attr('slide-index');
         changeSelectedBranch($(this), slideIdx);
     });
 
@@ -98,15 +113,24 @@
         var slideIdx = '';
         var btn = '';
         switch (office) {
+            case 'malaysia':
+                slideIdx = $('.imgMaylaysia').attr('slide-index');
+                btn = $('#btnOfficeMalaysia');
+                break;
+
+            case 'mexico':
+                slideIdx = $('.imgMexico').attr('slide-index');
+                btn = $('#btnOfficeMexico');
+                break;
+            
             case 'thailand':
                 slideIdx = $('.imgThailand').attr('slide-index');
                 btn = $('#btnOfficeThailand');
                 break;
-            case 'malaysia':
-                break;
-            case 'mexico':
-                break;
-            case 'united-kingdom':
+
+            case 'uk':
+                slideIdx = $('.imgUnitedKingdom').attr('slide-index');
+                btn = $('#btnOfficeUK');
                 break;
         }
 
