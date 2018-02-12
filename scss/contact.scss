@@ -29,7 +29,7 @@ page.contact {
             right: 0;
             margin: auto;
             z-index: 999;
-            padding-left: 15px;
+            padding-left: 65px;
 
             h1 {
                 font-family: 'Gotham Black', 'Open Sans';
@@ -55,6 +55,12 @@ page.contact {
                 font-family: 'Gotham Bold';
                 color: $headerColor;
             }
+
+            .regional-office {
+                div {
+                    text-align: left;
+                }
+            }
         }
 
         .branch-list {
@@ -71,7 +77,7 @@ page.contact {
         }
 
         button {
-            width: 260px;
+            // width: 260px;
 
             &.selected {
                 color: #fff;

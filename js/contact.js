@@ -7,6 +7,7 @@
     //Page Start
     initMap();
     initContactSlider();
+    initSelectedOffice();
 
     $('#btnOfficeNetherland').click(function () {
         var slideIdx = $('.imgNetherland').attr('slide-index');
@@ -90,6 +91,28 @@
             mode: 'fade',
             pager: false
         });
+    }
+
+    function initSelectedOffice() {
+        var office = Global_GetUrlVars()['office'];
+        var slideIdx = '';
+        var btn = '';
+        switch (office) {
+            case 'thailand':
+                slideIdx = $('.imgThailand').attr('slide-index');
+                btn = $('#btnOfficeThailand');
+                break;
+            case 'malaysia':
+                break;
+            case 'mexico':
+                break;
+            case 'united-kingdom':
+                break;
+        }
+
+        if (slideIdx) {
+            changeSelectedBranch(btn, slideIdx);
+        }
     }
     //Function End
 })($);
