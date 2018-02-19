@@ -109,6 +109,13 @@ header {
                     color: $headerColor;
                     opacity: 1;
                 }
+
+                &.active {
+                    span {
+                        border-bottom: 1px solid;
+                        padding-bottom: 1px;
+                    }
+                }
             }
         }
     }
@@ -147,7 +154,7 @@ header {
 
                 &.active {
                     span {
-                        border-bottom: 2px solid;
+                        border-bottom: 1px solid;
                         padding-bottom: 1px;
                     }
                 }
