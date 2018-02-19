@@ -50,6 +50,30 @@ page.company {
         }
     }
 
+    .ceteau-stats {
+        text-align: center;
+        max-width: $contentMaxWidth;
+        margin: auto;
+        padding-bottom: 50px;
+
+        .number-counter {
+            .item {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-family: 'Gotham Black';
+                font-size: 20px;
+                color: #0078d7;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+                position: relative;
+                height: 48px;
+            }
+        }
+    }
+
     .vdo-present {
         padding: 35px 50px;
         text-align: center;
@@ -267,25 +291,6 @@ page.company {
                 }
             }
 
-        }
-
-        .number-counter {
-            padding-top: 20px;
-
-            .item {
-                font-size: 20px;
-            }
-
-            h4 {
-                font-family: 'Gotham Black';
-                font-size: 18px;
-                color: #0078d7;
-                margin-left: auto;
-                margin-right: auto;
-                padding-top: 10px;
-                position: relative;
-                height: 48px;
-            }
         }
     }
 }

@@ -5,6 +5,7 @@
 
     //Page Start
     initCompanySlider();
+    checkCounterVisible();
     //Page Load
 
     //Event Start
@@ -38,11 +39,11 @@
         });
     }
 
-    function getVisible() {
+    function checkCounterVisible() {
         if (isCounterStart) {
             return;
         }
-        
+
         var $el = $('.number-counter'),
             scrollTop = $(this).scrollTop(),
             scrollBot = scrollTop + $(this).height(),
@@ -60,6 +61,6 @@
         }
     }
 
-    $(window).on('scroll resize', getVisible);
+    $(window).on('scroll resize', checkCounterVisible);
     //Function End
 })($);
