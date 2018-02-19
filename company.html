@@ -35,9 +35,10 @@
     <link href="lib/pixeden/font-pixeden-fill.css" rel="stylesheet" />
     <link href="lib/lightslider/css/lightslider.min.css" rel="stylesheet" />
     <link href="lib/social-icon/social-icon.css" rel="stylesheet" />
+    <link href="lib/odometer/themes/odometer-theme-car.css" rel="stylesheet" />
     <link href="lib/weact/dist/css/core.css" rel="stylesheet" />
-    <link href="css/global.css?v=16" rel="stylesheet" />
-    <link href="css/company.css?v=2" rel="stylesheet" />
+    <link href="css/global.css?v=17" rel="stylesheet" />
+    <link href="css/company.css?v=3" rel="stylesheet" />
 </head>
 
 <body>
@@ -63,12 +64,12 @@
             </a>
             <div class="top-menu">
                 <nav>
-                    <a href="./index.html">HOME</a>
-                    <a href="./company.html">COMPANY</a>
-                    <a href="">PRODUCTS</a>
-                    <a href="">PROJECTS</a>
-                    <a href="">NEWS</a>
-                    <a href="./contact.html">CONTACT</a>
+                    <a href="./index.html"><span>HOME</span></a>
+                    <a href="./company.html" class="active"><span>COMPANY</span></a>
+                    <a href=""><span>PRODUCTS</span></a>
+                    <a href=""><span>PROJECTS</span></a>
+                    <a href=""><span>NEWS</span></a>
+                    <a href="./contact.html"><span>CONTACT</span></a>
                 </nav>
             </div>
             <div class="top-menu-mobile">
@@ -168,6 +169,9 @@
     <page class="company">
         <section class="top-banner">
             <img src="img/banner2.jpg" class="weactImageRatio" />
+            <div class="page-title">
+                <h1>ADAVANCED<br>GROUNDIMPROVEMENT TECHNIQUES</h1>
+            </div>
         </section>
 
         <section class="concept">
@@ -266,8 +270,11 @@
             <h1 id="whyCeteau" class="main-header jump-target">WAAROM CETEAU</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <a href="">
-                        <div class="item item1"><i class="fa fa-laptop"></i></div>
+                    <a href="" class="whyCeteauIcon">
+                        <div class="item">
+                            <img class="default" src="img/icons/contact/independend-blue.svg" onerror="this.src='img/icons/contact/independend-blue.png'" />
+                            <img class="hover" src="img/icons/contact/independend-orange.svg" onerror="this.src='img/icons/contact/independend-orange.png'" style="display: none;" />
+                        </div>
                         <h3>Indepedend</h1>
                     </a>
                     <p>
@@ -276,8 +283,11 @@
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <a href="">
-                        <div class="item"><i class="fa fa-globe"></i></div>
+                    <a href="" class="whyCeteauIcon">
+                        <div class="item icon2">
+                            <img class="default" src="img/icons/contact/worldwide-blue.svg" onerror="this.src='img/icons/contact/worldwide-blue.png'" />
+                            <img class="hover" src="img/icons/contact/worldwide-orange.svg" onerror="this.src='img/icons/contact/worldwide-orange.png'" style="display: none;" />
+                        </div>
                         <h3>Worldwide Presence</h1>
                     </a>
                     <p>
@@ -286,8 +296,11 @@
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <a href="">
-                        <div class="item"><i class="fa fa-wrench"></i></div>
+                    <a href="" class="whyCeteauIcon">
+                        <div class="item icon3">
+                            <img class="default" src="img/icons/contact/equipment-blue.svg" onerror="this.src='img/icons/contact/equipment-blue.png'" />
+                            <img class="hover" src="img/icons/contact/equipment-orange.svg" onerror="this.src='img/icons/contact/equipment-orange.png'" style="display: none;" />
+                        </div>
                         <h3>Specialized Equipment</h1>
                     </a>
                     <p>
@@ -296,14 +309,39 @@
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <a href="">
-                        <div class="item"><i class="fa fa-sitemap"></i></div>
+                    <a href="" class="whyCeteauIcon">
+                        <div class="item icon4">
+                            <img class="default" src="img/icons/contact/customer-blue.svg" onerror="this.src='img/icons/contact/customer-blue.png'" />
+                            <img class="hover" src="img/icons/contact/customer-orange.svg" onerror="this.src='img/icons/contact/customer-orange.png'" style="display: none;" />
+                        </div>
                         <h3>Customer Focused</h1>
                     </a>
                     <p>
                         After we understand our clients' needs, our design and engineering teams create technology that is intuitive, helping clients
                         easily achieve their goals in less time.
                     </p>
+                </div>
+            </div>
+            <div class="row number-counter">
+                <div class="col-xs-12 col-sm-4 col-md-5ths">
+                    <h4>Years Experience</h4>
+                    <div class="item odometer" data-value="17">10</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5ths">
+                    <h4>Satisfied Customers</h4>
+                    <div class="item odometer" data-value="341">100</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5ths">
+                    <h4>Countries Active</h4>
+                    <div class="item odometer" data-value="41">10</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5ths">
+                    <h4>Worldwide Staff</h4>
+                    <div class="item odometer" data-value="230">100</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5ths">
+                    <h4>Linear meters Drain</h4>
+                    <div class="item odometer" data-value="986138758">100000000</div>
                 </div>
             </div>
         </section>
@@ -393,13 +431,20 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        window.odometerOptions = {
+            format: '(.ddd)'
+        };
+    </script>
+
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/bootbox/bootbox.min.js"></script>
     <script src="lib/lightslider/js/lightslider.min.js"></script>
+    <script src="lib/odometer/odometer.min.js"></script>
     <script src="lib/weact/src/js/core.js"></script>
     <script src="js/global.js?v=4"></script>
-    <script src="js/company.js?v=1"></script>
+    <script src="js/company.js?v=2"></script>
 </body>
 
 </html>

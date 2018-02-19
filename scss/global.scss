@@ -129,7 +129,6 @@ header {
             a {
                 text-transform: uppercase;
                 color: #fff;
-                font-family: 'Gotham Bold';
                 font-size: 16px;
                 padding-right: 14px;
 
@@ -140,6 +139,17 @@ header {
                 &:hover {
                     color: $headerColor;
                     opacity: 1;
+                }
+
+                span {
+                    font-family: 'Gotham Bold';
+                }
+
+                &.active {
+                    span {
+                        border-bottom: 2px solid;
+                        padding-bottom: 1px;
+                    }
                 }
             }
         }
@@ -488,5 +498,41 @@ h1.sub-header {
         span {
             font-weight: bold;
         }
+    }
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
     }
 }

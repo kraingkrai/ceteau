@@ -2,6 +2,7 @@
 
 page.company {
     .top-banner {
+        position: relative;
         height: 500px;
 
         img {
@@ -10,6 +11,27 @@ page.company {
             width: 100%;
             height: 100%;
             object-fit: fill;
+        }
+
+        .page-title {
+            max-width: $contentMaxWidth;
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 999;
+            padding-left: 65px;
+
+            h1 {
+                font-family: 'Gotham Black', 'Open Sans';
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 36px;
+                @media only screen and (max-width: $screenSmall) {
+                    font-size: 36px;
+                }
+            }
         }
     }
 
@@ -196,38 +218,15 @@ page.company {
                 text-align: center;
 
                 .item {
-                    width: 60px;
-                    height: 60px;
-                    // background-size: 60px 60px;
                     margin-left: auto;
                     margin-right: auto;
-
-                    i {
-                        font-size: 60px;
-                        color: $headerColor;
+                    
+                    img {
+                        width: 60px;
+                        height: 60px;
                     }
                 }
 
-                a:hover {
-                    i {
-                        color: $hoverColor;
-                    }
-                }
-
-                .image1 {
-                    background-image: url('../img/icons/graph.png?v=1');
-                }
-                .image2 {
-                    width: 169px;
-                    background-size: 169px 60px;
-                    background-image: url('../img/icons/cbe.png?v=1');
-                }
-                .image3 {
-                    background-image: url('../img/icons/drill.png?v=1');
-                }
-                .image4 {
-                    background-image: url('../img/icons/staff.png?v=1');
-                }
                 h3 {
                     font-family: 'Gotham Black';
                     font-size: 18px;
@@ -253,29 +252,39 @@ page.company {
                         }
                     }
                 }
-                a:hover .image1 {
-                    background-image: url('../img/icons/graph-hover.png');
-                }
-                a:hover .image2 {
-                    background-image: url('../img/icons/cbe-hover.png');
-                }
-                a:hover .image3 {
-                    background-image: url('../img/icons/drill-hover.png');
-                }
-                a:hover .image4 {
-                    background-image: url('../img/icons/staff-hover.png');
-                }
+
                 a:hover h3 {
                     color: $hoverColor !important;
                     &:before {
                         border-bottom-color: $hoverColor;
                     }
                 }
+
                 p {
                     font-family: 'Gotham Book', 'Open Sans';
                     font-size: 14px;
                     padding: 7px 10px 10px 0;
                 }
+            }
+
+        }
+
+        .number-counter {
+            padding-top: 20px;
+
+            .item {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-family: 'Gotham Black';
+                font-size: 18px;
+                color: #0078d7;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+                position: relative;
+                height: 48px;
             }
         }
     }
