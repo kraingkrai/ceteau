@@ -238,6 +238,10 @@ header {
     padding: 30px;
     background: $grayContentBackground;
 
+    .container {
+        margin: 0 auto;
+    }
+
     a {
         display: table;
         margin: 0 auto;
@@ -621,4 +625,13 @@ h1.sub-header {
         width: 20%;
         float: left;
     }
+}
+
+html {
+    background: url('../img/icons/footer/mail-blue.png') no-repeat -9999px -9999px,
+                url('../img/icons/footer/mail-orange.png') no-repeat -9999px -9999px,
+                url('../img/icons/footer/call-blue.png') no-repeat -9999px -9999px,
+                url('../img/icons/footer/call-orange.png') no-repeat -9999px -9999px,
+                url('../img/icons/footer/callback-blue.png') no-repeat -9999px -9999px,
+                url('../img/icons/footer/callback-orange.png') no-repeat -9999px -9999px
 }

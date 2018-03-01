@@ -306,7 +306,7 @@
 
     <!-- Body Content -->
     <div class="contact-channel">
-        <div class="row">
+        <div class="row container">
             <div class="col-xs-12 col-sm-4">
                 <a href="mailto:info@ceteau.com">
                     <div class="mail-icon"></div>
@@ -409,6 +409,28 @@
             </div>
         </div>
     </footer>
+
+    <div id="modalCallbackForm" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-callback-form" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="pe-7s-close" aria-hidden="true"></span></button>
+                    <h4 class="modal-title">Call Back</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <label>Subject <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" maxlength="100">
+                        <label>Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" maxlength="50">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" maxlength="20">
+                        <button class="btn btn-default submit" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="modalMapDetail" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-location" role="document">
