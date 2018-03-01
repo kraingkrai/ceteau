@@ -56,7 +56,7 @@ header {
         background-color: #fff;
         
         .top-menu nav a, .top-menu-mobile i, .lang-options, .lang-options a {
-            color: $headerColor !important;
+            color: $mainColor !important;
         }
 
         .logo-blue {
@@ -106,7 +106,7 @@ header {
                 color: #fff;
 
                 &:hover {
-                    color: $headerColor;
+                    color: $mainColor;
                     opacity: 1;
                 }
 
@@ -144,7 +144,7 @@ header {
                 }
 
                 &:hover {
-                    color: $headerColor;
+                    color: $mainColor;
                     opacity: 1;
                 }
 
@@ -212,9 +212,83 @@ header {
     }
 }
 
+.modal {
+    z-index: 99999;
+}
+
+.modal-callback-form {
+    label {
+        padding-top: 10px;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    .submit {
+        margin-top: 25px;
+    }
+}
+
+.text-danger {
+    color: #cc0000;
+}
+
+.contact-channel {
+    padding: 30px;
+    background: $grayContentBackground;
+
+    a {
+        display: table;
+        margin: 0 auto;
+
+        &:hover {
+            span {
+                color: $hoverColor;
+            }
+            .mail-icon {
+                background-image: url('../img/icons/footer/mail-orange.png');
+            }
+            .call-icon {
+                background-image: url('../img/icons/footer/call-orange.png');
+            }
+            .callback-icon {
+                background-image: url('../img/icons/footer/callback-orange.png');
+            }
+        }
+
+        div {
+            width: 70px;
+            height: 70px;
+            background-size: 70px 70px;
+            display: inline-block;
+            margin-right: 20px;
+
+            &.mail-icon {
+                background-image: url('../img/icons/footer/mail-blue.png');
+            }
+            &.call-icon {
+                background-image: url('../img/icons/footer/call-blue.png');
+            }
+            &.callback-icon {
+                background-image: url('../img/icons/footer/callback-blue.png');
+            }
+        }
+
+        span {
+            color: $mainColor;
+            font-size: 16px;
+            font-family: 'Gotham Bold';
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
 footer {
     padding: 40px 0;
-    background: #e2e4ed;
+    // background: #e2e4ed;
+    @extend .radialBlueBackground;
 
     nav {
         a, label {
@@ -228,7 +302,8 @@ footer {
             &.main {
                 font-family: 'Gotham Bold';
                 font-size: 18px;
-                color: #6b636f;
+                // color: #6b636f;
+                color: $hoverColor;
 
                 @media only screen and (max-width: $screenSmall) {
                     padding-top: 20px;
@@ -254,19 +329,22 @@ footer {
             &.sub {
                 font-family: 'Gotham Book';
                 font-size: 14px;
-                color: $subFooterColor;
+                // color: $subFooterColor;
+                color: #fff;
                 padding-bottom: 5px;
             }
 
             &:hover {
-                color: $headerColor;
+                // color: $mainColor;
+                color: $hoverColor;
             }
         }
 
         p {
             font-family: 'Gotham Book';
             font-size: 14px;
-            color: $subFooterColor;
+            // color: $subFooterColor;
+            color: #fff;
         }
 
         .space {
@@ -284,7 +362,8 @@ footer {
             height: 36px;
 
             i {
-                color: #635966;
+                // color: #635966;
+                color: #fff;
                 font-size: 26px;
                 display: block;
             }
@@ -305,7 +384,7 @@ footer {
     top: 0;
     padding: 50px 30px;    
     height: 100%;
-    background-color: $headerColor;
+    background-color: $mainColor;
     z-index: 99999;
     -webkit-transition: all 0.30s linear;
     -moz-transition: all 0.30s linear;
@@ -396,7 +475,7 @@ footer {
 
     &:hover {
         color: #fff;
-        background-color: $headerColor;
+        background-color: $mainColor;
         opacity: 1;
     }
 }
@@ -469,21 +548,21 @@ footer {
         }
         &.active {
             a {
-                background-color: $headerColor;
+                background-color: $mainColor;
             }
         }
     }
 }
 
 h1.main-header {
-    color: $headerColor;
+    color: $mainColor;
     text-transform: uppercase;
     font-size: 30px;
     font-family: 'Gotham Bold', 'Open Sans';
 }
 
 h1.sub-header {
-    color: $headerColor;
+    color: $mainColor;
     font-size: 30px;
     font-family: 'Gotham Bold', 'Open Sans';
 }

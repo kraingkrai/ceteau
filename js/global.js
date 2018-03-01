@@ -30,6 +30,13 @@
             $("header").removeClass("active");
         }
     });
+
+    $('#callbackLink').click(function () {
+        $('#modalCallbackForm').modal({
+            backdrop: true,
+            keyboard: false
+        });
+    });
     //Event End
 
     //Function Start

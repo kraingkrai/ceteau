@@ -33,7 +33,7 @@ page.contact {
 
             h1 {
                 font-family: 'Gotham Black', 'Open Sans';
-                color: $headerColor;
+                color: $mainColor;
                 text-transform: uppercase;
                 font-size: 36px;
                 @media only screen and (max-width: $screenSmall) {
@@ -76,7 +76,7 @@ page.contact {
             h1 {
                 font-size: 30px;
                 font-family: 'Gotham Bold';
-                color: $headerColor;
+                color: $mainColor;
             }
 
             .regional-office {
@@ -104,7 +104,7 @@ page.contact {
 
             &.selected {
                 color: #fff;
-                background-color: $headerColor;
+                background-color: $mainColor;
             }
         }
     }
@@ -131,7 +131,7 @@ page.contact {
 
                 h3 {
                     font-family: 'Gotham Bold';
-                    color: $headerColor;
+                    color: $mainColor;
                     font-size: 20px;
                     padding-top: 15px;
                     padding-bottom: 15px;
@@ -218,7 +218,7 @@ page.contact {
                 cursor: pointer;
 
                 &:hover {
-                    background-color: $headerColor;
+                    background-color: $mainColor;
                 }
             }
 
