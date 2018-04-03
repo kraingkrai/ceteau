@@ -73,7 +73,7 @@ page.home {
 
         .detail {
             padding-top: 25px;
-            font-size: 15px;
+            font-size: 23px;
             margin-left: auto;
             margin-right: auto;
             color: $descColor;
@@ -164,6 +164,8 @@ page.home {
                 }
 
                 .image3 {
+                    width: 85px;
+                    background-size: 85px 60px;
                     background-image: url('../img/icons/drill.png?v=1');
                 }
 

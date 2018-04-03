@@ -43,7 +43,7 @@ page.company {
 
         .detail {
             padding-top: 25px;
-            font-size: 15px;
+            font-size: 23px;
             margin-left: auto;
             margin-right: auto;
             color: $descColor;
@@ -52,13 +52,20 @@ page.company {
 
     .ceteau-stats {
         text-align: center;
-        max-width: $contentMaxWidth;
         margin: auto;
         padding-bottom: 50px;
 
         .number-counter {
+            max-width: $contentMaxWidth;
+            margin: auto;
+
             .item {
                 font-size: 20px;
+
+                .odometer-digit {
+                    width: 14px;
+                    color: $hoverColor;
+                }
             }
 
             h4 {
@@ -77,7 +84,6 @@ page.company {
     .vdo-present {
         padding: 35px 50px;
         text-align: center;
-        background-color: $grayContentBackground;
         color: $textColor;
 
         h1 {
@@ -132,7 +138,6 @@ page.company {
         font-family: 'Gotham Book';
         // color: #fff;
         // @extend .radialBlueBackground;
-        background: $grayContentBackground;
 
         .management-container {
             margin-left: auto;
@@ -226,19 +231,18 @@ page.company {
     }
 
     .why-ceteau {
-        padding: 15px 50px 30px 50px;
+        padding: 35px 50px 30px 50px;
         text-align: center;
-        // background-color: $grayContentBackground;
         color: $textColor;
 
         h1 {
-            padding: 20px 0 40px 0;
             text-transform: uppercase;
         }
 
         .row {
             max-width: $contentMaxWidth;
             margin: auto;
+            padding-top: 40px;
 
             div {
                 text-align: center;
