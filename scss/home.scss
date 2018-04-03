@@ -130,7 +130,6 @@ page.home {
     .service-list {
         padding: 15px 50px;
         text-align: center;
-        background-color: $grayContentBackground;
         color: $textColor;
 
         h1 {
@@ -405,7 +404,6 @@ page.home {
     section.news {
         font-family: 'Gotham Book';
         // color: #fff;
-        background: $grayContentBackground;
         // @extend .radialBlueBackground;
 
         .news-container {
