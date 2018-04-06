@@ -61,10 +61,10 @@ page.company {
             margin: auto;
 
             .item {
-                font-size: 20px;
+                font-size: 30px;
 
                 .odometer-digit {
-                    width: 14px;
+                    min-width: 20px;
                     color: $hoverColor;
                 }
             }
@@ -137,8 +137,6 @@ page.company {
         padding-top: 55px;
         padding-bottom: 60px;
         font-family: 'Gotham Book';
-        // color: #fff;
-        // @extend .radialBlueBackground;
 
         .management-container {
             margin-left: auto;
@@ -148,7 +146,6 @@ page.company {
             h1 {
                 margin-top: 0;
                 text-align: center;
-                // color: #fff;
                 color: $mainColor;
             }
 
@@ -156,7 +153,7 @@ page.company {
                 padding-top: 30px;
 
                 .desc {
-                    font-size: 15px;
+                    font-size: 23px;
                 }
 
                 img {
@@ -178,7 +175,7 @@ page.company {
             margin: auto;
             max-width: $contentMaxWidth;
             padding-top: 25px;
-            font-size: 15px;
+            font-size: 23px;
         }
     }
 
