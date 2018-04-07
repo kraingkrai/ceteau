@@ -1,0 +1,44 @@
+@import "_variables.scss";
+
+page.news {
+    .top-banner {
+        position: relative;
+        height: 500px;
+
+        img {
+            -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .page-title {
+            max-width: $contentMaxWidth;
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 999;
+            padding-left: 65px;
+
+            h1 {
+                font-family: 'Gotham Black', 'Open Sans';
+                color: $mainColor;
+                text-transform: uppercase;
+                font-size: 36px;
+                @media only screen and (max-width: $screenSmall) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    
+    .concept {
+        padding-top: 20px;
+        text-align: center;
+        max-width: $contentMaxWidth;
+        margin: auto;
+    }
+}

@@ -35,8 +35,15 @@ page.product {
         }
     }
 
+    .concept {
+        padding-top: 20px;
+        text-align: center;
+        max-width: $contentMaxWidth;
+        margin: auto;
+    }
+
     .product-list {
-        padding-top: 50px;
+        padding: 20px 0;
 
         .row {
             max-width: $contentMaxWidth;
@@ -47,6 +54,7 @@ page.product {
 
                 .item {
                     max-width: 350px;
+                    margin: auto;
                     
                     a {
                         color: #fff;
