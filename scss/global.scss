@@ -634,3 +634,23 @@ html {
                 url('../img/icons/footer/callback-blue.png') no-repeat -9999px -9999px,
                 url('../img/icons/footer/callback-orange.png') no-repeat -9999px -9999px
 }
+
+.font-medium {
+    font-family: 'Gotham Medium';
+}
+
+.font-bold {
+    font-family: 'Gotham Bold';
+}
+
+.bg-gray {
+    background-color: $grayContentBackground;
+}
+
+.text-blue {
+    color: $mainColor !important;
+}
+
+.text-white { 
+    color: #fff !important;
+}
