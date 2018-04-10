@@ -62,6 +62,17 @@ page.home {
                 margin-top: 50px;
             }
         }
+
+        .white-text {
+            img {
+                -webkit-filter: none;
+                filter: none;
+            }
+
+            h1 {
+                color: #fff;
+            }
+        }
     }
 
     .concept {

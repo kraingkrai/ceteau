@@ -651,6 +651,188 @@ html {
     color: $mainColor !important;
 }
 
-.text-white { 
-    color: #fff !important;
+.general-top-banner {
+    position: relative;
+    height: 500px;
+
+    img {
+        -webkit-filter: brightness(1.1);
+        filter: brightness(1.1);
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .page-title {
+        max-width: $contentMaxWidth;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999;
+        padding-left: 65px;
+
+        h1 {
+            font-family: 'Gotham Black', 'Open Sans';
+            color: $mainColor;
+            text-transform: uppercase;
+            font-size: 36px;
+            @media only screen and (max-width: $screenSmall) {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+.general-page-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.general-item-list {
+    padding: 20px 0;
+
+    .row {
+        max-width: $contentMaxWidth;
+        margin: auto;
+
+        .col {
+            padding-bottom: 50px;
+
+            .item {
+                max-width: 350px;
+                margin: auto;
+                
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        h2, i {
+                            color: $hoverColor !important;
+                        }
+
+                        .location {
+                            i {
+                                color: #fff !important;
+                            }
+                        }
+                    }
+                }
+                
+                img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+
+                .title {
+                    padding: 30px 20px;
+                    background-color: $mainColor;
+                    
+                    h2 {
+                        margin: 0;
+                        font-size: 22px;            
+                        float: left;
+                    }
+
+                    i {
+                        font-size: 35px;
+                        line-height: 23px;
+                        font-weight: bold;
+                        float: right;
+                    }
+
+                    .location {
+                        padding-top: 15px;
+                        font-size: 13px;
+
+                        i {
+                            font-size: 15px;
+                            float: none;
+                            padding-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.general-long-title {
+            .title {
+                padding: 30px 20px 10px 20px;
+                height: 130px;
+                
+                h2 {
+                    font-size: 18px !important;
+                    width: 90%;
+                    height: 38px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+.general-concept {
+    padding: 20px 50px 50px 50px;
+    text-align: center;
+    max-width: $contentMaxWidth;
+    margin: auto;
+
+    .detail {
+        padding-top: 25px;
+        font-size: 23px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $descColor;
+    }
+}
+
+.general-image-slider {
+    .image-container {
+        position: relative;
+
+        .main-header {
+            position: absolute;
+            top: 35px;
+            text-align: center;
+            left: 0;
+            right: 0;
+            color: #fff;
+            z-index: 999;
+        }
+
+        .desc {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            margin: auto;
+            transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            z-index: 999;
+            max-width: $contentMaxWidth;
+            text-align: center;
+
+            h1 {
+                font-family: 'Gotham Book';
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+
+        .item {
+            height: 500px;
+            
+            @media only screen and (max-width: $screenTiny) {
+                height: 400px;
+            }
+
+            img {
+                -webkit-filter: brightness(0.8);
+                filter: brightness(0.8);
+            }
+        }
+    }
 }
