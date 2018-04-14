@@ -2,4 +2,39 @@
 
 page.project-detail {
 
+    .project-data {
+        padding-top: 20px;
+        padding-bottom: 60px;
+
+        .main-header {
+            text-align: center;
+        }
+
+        .content {
+            margin: auto;
+            max-width: $contentMaxWidth;
+            padding: 25px 10px 0 10px;
+            font-size: 18px;
+
+            .col {
+                padding: 15px 0 0 0;
+
+                i {
+                    color: $mainColor;
+                    width: 21px;
+                    text-align: center;
+
+                    &.fa-map-marker {
+                        font-size: 20px;
+                    }
+                }
+    
+                .title {
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
 }
