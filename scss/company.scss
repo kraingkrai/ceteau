@@ -129,22 +129,6 @@ page.company {
         }
     }
 
-    .quality {
-        padding-top: 20px;
-        padding-bottom: 60px;
-
-        .main-header {
-            text-align: center;
-        }
-
-        .content {
-            margin: auto;
-            max-width: $contentMaxWidth;
-            padding-top: 25px;
-            font-size: 23px;
-        }
-    }
-
     .team {
         .team-container {
             position: relative;
@@ -170,7 +154,7 @@ page.company {
                 -webkit-transform: translate(0, -50%);
                 z-index: 999;
                 max-width: $contentMaxWidth;
-                text-align: center;
+                padding-left: 100px;
 
                 h1 {
                     font-family: 'Gotham Book';
