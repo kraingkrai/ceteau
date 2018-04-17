@@ -835,6 +835,13 @@ html {
             }
         }
     }
+
+    &.no-filter {
+        img {
+            -webkit-filter: none !important;
+            filter: none !important;
+        }
+    }
 }
 
 .lSSlideOuter .lSPager.lSGallery {
@@ -847,4 +854,9 @@ html {
             object-fit: cover;
         }
     }
+}
+
+.lSPager.lSGallery {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
