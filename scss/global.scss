@@ -505,7 +505,7 @@ footer {
 }
 
 .lSAction {
-    z-index: 9999;
+    z-index: 9000;
 
     a {
         opacity: 1;
@@ -519,7 +519,7 @@ footer {
     }
 
     .lSNext, .lSPrev {
-        z-index: 9999;
+        z-index: 9000;
         background-position: initial;
     }
 
@@ -859,4 +859,8 @@ html {
 .lSPager.lSGallery {
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+.reset-z-index {
+    z-index: unset;
 }
