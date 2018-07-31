@@ -864,3 +864,13 @@ html {
 .reset-z-index {
     z-index: unset;
 }
+
+a.main-link {
+    &:hover {
+        color: $hoverColor;
+
+        h1 {
+            color: $hoverColor;
+        }
+    }
+}

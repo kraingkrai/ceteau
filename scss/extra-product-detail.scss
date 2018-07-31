@@ -29,6 +29,7 @@ page.product-detail {
 
             .main-description {
                 padding-right: 40px;
+                text-align: center;
 
                 .graph-img-container {
                     padding-top: 20px;
@@ -68,17 +69,10 @@ page.product-detail {
                     li {
                         padding-left: 1em; 
                         text-indent: -.7em;
+                        list-style: none;
 
-                        &:before {
-                            content: "\2022";
+                        i {
                             color: $mainColor;
-                            font-size: 20px;
-                            display: block;
-                            position: relative;
-                            max-width: 0;
-                            max-height: 0;
-                            left: -10px;
-                            top: 0;
                         }
                     }
                 }
