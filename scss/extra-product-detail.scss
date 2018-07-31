@@ -4,8 +4,6 @@ page.product-detail {
     .product-description {
         .general-concept {
             text-align: left;
-            padding-left: 0;
-            padding-right: 0;
 
             @media only screen and (max-width: $screenLarge) {
                 padding-left: 30px;
