@@ -37,8 +37,7 @@
     <link href="lib/social-icon/social-icon.css" rel="stylesheet" />
     <link href="lib/weact/dist/css/core.css" rel="stylesheet" />
     <link href="css/global.css?v=2" rel="stylesheet" />
-    <link href="css/product-detail.css?v=2" rel="stylesheet" />
-    <link href="css/extra-product-detail.css" rel="stylesheet" />
+    <link href="css/calculator.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -172,132 +171,87 @@
     </div>
 
     <!-- Body Content -->
-    <page class="product-detail">
-        <section class="general-top-banner">
-            <img src="img/top-banner1.jpg" class="weactImageRatio" />
-            <div class="page-title">
-                <a href="./product.html" class="main-link"><h1>Products</h1></a>
-                <a href="./contact.html" class="main-btn font-medium">Contact</a>
-            </div>
+    <page class="calculator">
+        <section class="top-banner">
+            <img src="img/banner2.jpg" class="weactImageRatio" />
         </section>
 
-        <section class="general-concept">
-            <h1 class="main-header">CeTeau Cell</h1>
-            <p class="detail">
-                Geocell is a cellular three-dimensional high density polyethylene honeycomb structure designed to physically confine infill
-                material, this way the infill material is protected from migration due to haudraulic flows.
-            </p>
-        </section>
-
-        <section class="description bg-gray">
-            <h1 id="inhouseProduction" class="main-header jump-target">Inhouse Production</h1>
-            <div class="content">
-                <div class="desc">
-                    CeTeau ontwikkelde een geavanceerd systeem voor de produc7e van ver7cale drainagelinten van kunststof. Geproduceerd door
-                    eigen machines om volledige controle te hebben over ons hoogwaardige produc7eproces. Onze fabrieken staan in Maleisië en
-                    en Thailand én Nederland.
-                </div>
-                <div class="row item-list">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="img-container">
-                            <img src="img/news1.jpg" class="weactImageRatio">
-                        </div>
-                        <div class="item-desc">
-                            <a href="">The Netherlands</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="img-container">
-                            <img src="img/news2.jpg" class="weactImageRatio">
-                        </div>
-                        <div class="item-desc">
-                            <a href="">Malaysia</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="img-container">
-                            <img src="img/news3.jpg" class="weactImageRatio">
-                        </div>
-                        <div class="item-desc">
-                            <a href="">Thailand</a>
-                        </div>
-                    </div>
+        <section class="description">
+            <div class="container">
+                <h1 id="companyProfile" class="main-header">PVD Calculator</h1>
+                <p class="detail">
+                    The consolidation time in relation with the hydraulic conductivity of the soil will determine the optimum spacing for PVD installation. Typical installation distance between PVD points is 1.0 to 1.5 meter. The installation pattern can be in square or triangular patterns, but triangular patterns are more effective. For a quick calculation of the total length of PVD required use the CeTeau PVD Calculator.
+                    <br /><br />
+                    To easily calculate the total number of PVD points and total quantity of PVD required for different installation patterns, PVD spacing and installation depth, use the PVD calculator below
+                    <br /><br />
+                    Disclaimer: No rights can be derived from the results of this calculation tool. When developing this tool, all possible care has been taken. Nevertheless, the possibility exists that certain information is not displayed correctly. No adjustments have been made for boundaries of the intended PVD installation area and no losses have been taken into consideration. If in doubt, please contact CeTeau before using the information.
+                </p>
+                <div class="pvd-image-container">
+                    <img src="img/calculator/pvd.jpg" alt="pvd">
                 </div>
             </div>
         </section>
 
-        <!-- New Design -->
-        <section class="product-description">
-            <div class="general-concept">
-                <h1 class="main-header">VIBRO COMPACTION</h1>
-                <div class="row">
-                    <div class="col-sm-12 col-md-8 main-description">
-                        <p class="detail">
-                            Vibro Compaction is a technique that enables the rearrangement of soil particles into
-                            a denser configuration with vibration by the use of powerful downhole deep vibrating
-                            probes.
-                        </p>
-                        <p class="detail">
-                            Vibro Replacement (Stone Columns) uses the same principle of the Vibro Compaction
-                            (powerful vibro flots that generate vibration to re-arrange soil particles) but in soils
-                            where the VC is not possible due to higher fines content (higher than 10% and - typically less than 40%); thus, the densification is achieved by displacement of the
-                            soils radially by the vibrator, refilling the resulting space with granular material which results in the construction of stone columns at the treatment locations. While Vibro Compaction is more of a Densification Ground Improvement technique that rearranges the soil particles into a denser state, Vibro Replacement (Stone Columns) is a Reinforcement GI technique that uses the same principle and equipment than the VC, but focuses into the strengthening of the soil by the construction of a stone column that enhances the soil bearing capacity, increases the shear strength and creates drainage paths for the excess water pressure.
-                        </p>
-                        <div class="graph-img-container">
-                            <a data-fancybox href="img/product-detail/graph.jpg"><img src="img/product-detail/graph.jpg" alt="Graph"></a>
-                        </div>
-                        <div class="sub-content">
-                            <h2 class="title">Applicable Soils & Depth of Improvement</h2>
-                            <p class="detail">
-                                The Vibro Compaction technique is most suitable for loose medium to coarse-grained sands with silt / clay content less than 10% (less efficient with fines content between 10% and 15%). Can be applicable to depths up to 45m (or more depending on Crane capacity)
-                                The Stone Columns are most suited for sands with fines content greater than 10% and typically less than 40% or for clays which require some level of bearing or lateral reinforcement. Can be applicable to depths up to 45m (or more depending on Crane capacity)
-                            </p>
+        <section class="calculator-form bg-gray">
+            <div class="container">
+                <h1 class="main-header">Enter your values</h2>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Grid</label>
+                        <div class="col-sm-9 dropdown">
+                            <select id="grid" class="form-control">
+                                <option value="1">Triangular</option>
+                                <option value="2">Square</option>
+                            </select>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-md-4 attribute-list">
-                        <div>
-                            <h2 class="title">Applications</h2>
-                            <ul class="attributes">
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Nearly all reclamation projects</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Buildings</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Offshore and nearshore man-made islands</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Pipelines</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Road and rail embankments</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Power plants</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Infrastructure in general</li>
-                            </ul>
-                            <div class="application-img-container">
-                                <a data-fancybox href="img/product-detail/application.jpg"><img src="img/product-detail/application.jpg" alt="Application"></a>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="title">Advantages</h2>
-                            <ul class="attributes">
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Increases the allowable bearing capacity of the soil</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Limits (minimizes) total and differential settlements</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Mitigates the risk of Liquefaction (to the design depth) in case of seismic event</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Reduces the size of foundation due to reinforced ground</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="title">Disadvantages</h2>
-                            <ul class="attributes">
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Vibro Compaction has a diminished effectiveness if sand has fines content between 10% to 15% and definitively is not applicable if fines content in excess of 15%, unless combined with other G.I. approaches.</li>
-                            </ul>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Spacing</label>
+                        <div class="col-sm-9 input-group">
+                            <input id="spacing" type="text" class="form-control">
+                            <div class="input-group-addon">m</div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Area</label>
+                        <div class="col-sm-9 input-group">
+                            <input id="area" type="text" class="form-control">
+                            <div class="input-group-addon">m<sup>2</sup></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Depth</label>
+                        <div class="col-sm-9 input-group">
+                            <input id="depth" type="text" class="form-control">
+                            <div class="input-group-addon">m</div>
+                        </div>
+                    </div>
+                </form>
+                <div class="controls">
+                    <button id="calculateBtn" type="button" class="font-medium">Calculate</button>
                 </div>
-            </div>    
+                <form class="form-horizontal result">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Number</label>
+                        <div class="col-sm-9 input-group">
+                            <input id="points" type="text" class="form-control" readonly>
+                            <div class="input-group-addon">points</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Quantity</label>
+                        <div class="col-sm-9 input-group">
+                            <input id="quantity" type="text" class="form-control" readonly>
+                            <div class="input-group-addon">m</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
-        <!-- End New Design -->
-        <div style="text-align: center; margin-bottom: 50px;">
-            <a href="./pvd-calculator.html" class="main-btn font-medium">Calculator</a>
-        </div>
     </page>
 
     <!-- Body Content -->
-    <div class="contact-channel bg-gray">
+    <div class="contact-channel">
         <div class="row container">
             <div class="col-xs-12 col-sm-4">
                 <a href="mailto:info@ceteau.com">
@@ -405,6 +359,7 @@
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/weact/src/js/core.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>

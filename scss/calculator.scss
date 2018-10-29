@@ -1,0 +1,71 @@
+@import "_variables.scss";
+
+page.calculator {
+    .description {
+        padding-bottom: 35px;
+
+        .main-header {
+            text-align: center;
+            padding: 25px 0;
+        }
+        
+        .detail {
+            font-size: 18px;
+        }
+
+        .pvd-image-container {
+            padding-top: 20px;
+            text-align: center;
+
+            img {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .calculator-form {
+        padding: 35px 0 50px 0;
+
+        .main-header {
+            text-align: center;
+        }
+
+        form {
+            padding-top: 30px;
+            max-width: 300px;
+            margin: auto;
+
+            .dropdown {
+                padding: 0;
+            }
+
+            .input-group-addon {
+                width: 45px!important;
+            }
+
+            &.result {
+                .input-group-addon {
+                    width: 70px!important;
+                }
+            }
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 30px;
+
+            button {
+                color: #fff;
+                background-color: #fca300;
+                font-size: 22px;
+                padding: 5px 35px;
+                display: inline-block;
+                border: none;
+
+                &:focus {
+                    outline:0;
+                }
+            }
+        }
+    }
+}
