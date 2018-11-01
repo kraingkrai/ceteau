@@ -874,3 +874,13 @@ a.main-link {
         }
     }
 }
+
+.lg-backdrop {
+    &.in {
+        z-index: 999998;
+    }
+}
+
+.lg-start-zoom {
+    z-index: 999999;
+}

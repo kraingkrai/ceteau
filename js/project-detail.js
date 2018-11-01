@@ -12,7 +12,13 @@
         auto: true,
         loop: true,
         pause: 5000,
-        mode: 'fade'
+        enableDrag: false,
+        mode: 'fade',
+        onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#projectSlider .lslide'
+            });
+        }
     });
 
     //Page Load
