@@ -3,6 +3,9 @@
     //Variables End
 
     //Page Start
+    setTimeout(function() {
+        $('.load-cover').animate({opacity: 1}, 1000);
+    }, 600);
     //Page Load
 
     //Event Start
